@@ -1,0 +1,105 @@
+.decorate{
+    position: relative;
+    background-color: rgb(192, 184, 247);
+    height: 1000px;
+    overflow-x: hidden;
+}
+.decorate h3{
+    position: relative;
+    color: darkslateblue;
+    left: 250px;
+    top: 10px;
+}
+.header img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 150px;
+}
+.header h1{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    color: rgb(65, 51, 161);
+}
+.de1 img {
+    position: absolute;
+    top: 130px;
+    height: 120px;
+    width: 100px;
+    left: 260px;
+}
+.de2 img{
+    position: absolute;
+    top: 250px;
+    left: 960px;
+}
+.gu img{
+    position: relative;
+    margin: 0px 2px 0px 2px;
+    height: 150px;
+    width: 200px;
+    left: 350px;
+}
+.de3 img {
+    position: absolute;
+    top: 340px;
+    height: 90px;
+    width: 80px;
+    left: 260px;
+}
+
+.dong img{
+    position: relative;
+    margin: 0px 2px 0px 2px;
+    top: 20px;
+    height: 150px;
+    width: 200px;
+    left: 350px;
+}
+.de4 img{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    top: 530px;
+    left: 960px;
+}
+.ideo img {
+    position: relative;
+    margin: 0px 2px 0px 2px;
+    top: 20px;
+    height: 150px;
+    width: 200px;
+    left:  350px;
+}
+.de5 img{
+    position: absolute;
+    top:760px;
+    left: 270px;
+    height: 100px;
+    width: 80px; 
+}
+.concise img{
+    position: relative;
+    margin: 0px 2px 0px 2px;
+    top: 20px;
+    height: 150px;
+    width: 200px;
+    left:  350px;
+}
+.zs img{
+    height: 350px;
+    width: 175px;
+    position:fixed;
+    left: 1100px;
+    top:250px;
+}
+.zs{
+    height: 350;
+    width: 175px;
+}
+.return{
+    position: absolute;
+    left: 1000px;
+    opacity: 0.7;
+}

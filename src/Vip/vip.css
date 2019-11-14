@@ -1,0 +1,42 @@
+.all{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(162, 250, 221);
+    overflow: hidden;
+    opacity: 0.8;
+}
+.VIP{ color: #4CAF50;
+    font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(4, 1, 41);
+    width: 50em;
+    margin-left: 20em;
+}
+li {float: left;margin: 10px;}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.active {background-color: #4CAF50;}
+.text{margin-left: 20em;} h4{color: rgb(161, 152, 70)} p{color: rgb(161, 152, 70)}
+table{margin-left: 15em;;border-color: rgb(192, 160, 91);color: rgb(192, 160, 91)}
+.pay{margin-left: 28em; margin-top: 50px ;border:solid 1px rgb(192, 160, 91);width: 35em}
+.pay h5{border-block-end: solid 1px rgb(192, 160, 91);padding: 10px;}
+.t input{width: 25em;
+    margin:10px;
+    outline: none;
+    background: none;
+    font-size: 20px;} 
+.p2{
+    width: 25em;
+    margin-left: 20%;margin-top:20px;margin-bottom: 20px;
+    border: 2px rgb(192, 160, 91);
+    background-color: rgb(192, 160, 91);
+    height: 40px;
+}
