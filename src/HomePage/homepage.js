@@ -1,7 +1,7 @@
 import  React from 'react'
 import ReactDOM from 'react-dom';
 import {BrowserRouter,Route,Link,} from 'react-router-dom';
-import {Button,Icon,Calendar} from 'antd'
+import {Button,Icon,Calendar,Avatar} from 'antd';
 import HeaderPage from './../Header/header';
 import PlanningPage from '../Planning/planning';
 import LogoPage from '../Logo/logo';
@@ -17,9 +17,11 @@ export default class HomePage extends React.Component{
                 <div className={HomePageCss.lefttop}>
                    
                     <div className={HomePageCss.touxiang}>
-                        <a href="/logo" >+</a>
-                        {/* <Link to="/logo">+</Link> */}
-                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
+                    <Link to="/logo">
+                         <Avatar shape="square" size={64} icon="user" />
+                        {/* <a href="/logo" >+</a> */}
+                    </Link>
+                   <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
                     <div className={HomePageCss.qiandao}>
                         <a>打卡</a>
