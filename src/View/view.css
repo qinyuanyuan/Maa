@@ -1,0 +1,147 @@
+.view{
+    background: -webkit-linear-gradient( top,rgb(244, 161, 247),rgb(195, 154, 241),rgb(142, 194, 243));
+    height: 600px;
+    width: 1309px;
+    overflow: hidden;
+    opacity: 0.9;
+    /* overflow-x: hidden; */
+}
+.left img{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+.view .auto{
+    border: 3px solid;
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    height: 440px;
+    width: 650px;
+    overflow: hidden;
+    border-style: outset;
+}
+.autotop img{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top:0px;
+}
+.zan img{
+    position: relative;;
+    height: 50px;
+    width: 50px;
+    top: 30px;
+    left: 400px;
+}
+.zan h3{
+    position: relative;
+    top: 20px;
+    left: 400px;
+}
+.ps img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:340px;
+    left: 770px;
+}
+.share h3{
+    position: relative;
+    bottom: 23px;
+    left: 498px;
+}
+.pinglun h3{
+    position: relative;;
+    bottom: 67px;
+    left: 575px;
+}
+
+.right img {
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+}
+.pl{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(152, 154, 158);
+    text-decoration:underline;
+    position: relative;
+    bottom: 490px;
+    left: 820px;
+}
+.pm img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 355px;
+    left: 855px;
+}
+.aa{
+    width:80px;
+    height:300px;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.aa .bb{
+    width:80px;
+    height:440px;
+    position:absolute;
+    display:none;
+    border:1px solid rgb(247, 245, 245);
+    top:0px;
+    left:0px;
+    background-color: rgb(126, 129, 128);
+    opacity: 0.3;
+    
+}
+
+.aa:hover .bb{
+    display:block
+}
+.cc{
+    width:80px;
+    height:300px;
+    position:relative;
+    bottom: 195px;
+    left:852px;
+}
+.cc .dd{
+    width:80px;
+    height:440px;
+    position:absolute;
+    display:none;
+    border:1px solid rgb(255, 254, 254);
+    top:0px;
+    left:0px;
+    background-color: rgb(126, 129, 128);
+    opacity: 0.3;
+}
+
+.cc:hover .dd{
+    display:block
+}
+.ee{
+    font-size: 40px;
+    position: relative;
+    top:200px;
+    left: 20px;
+}
+.ff{
+    font-size: 40px;
+    position: relative;
+    top:200px;
+    left: 15px;
+}
+.pa{
+    position: absolute;
+    right: 1100px;
+    top:270px;
+    overflow: hidden;
+}
+.pa img{
+    height: 330px;
+    width: 200px;
+  
+}

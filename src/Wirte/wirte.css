@@ -1,0 +1,19 @@
+.wirte textarea{
+    position: relative;
+    left: 280px;
+    bottom: 73px;
+    height: 115px;
+    width: 652px;
+ background: -webkit-linear-gradient( bottom,rgb(219, 250, 173),rgb(252, 198, 252),rgb(199, 163, 241));
+ font-family: '隶书';
+ color: rgb(238, 233, 213);
+ font-size: 30px;
+}
+.wirte Button{
+    position: relative;
+    height: 40px;
+    width: 70px;
+    left: 200px;
+    bottom: 100px;
+    background-color: rgb(247, 166, 197);
+}

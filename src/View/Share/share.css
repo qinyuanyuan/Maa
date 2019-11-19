@@ -1,0 +1,44 @@
+.share{
+    position: relative;
+    bottom: 400px;
+    left: 480px;
+    border: 2px outset;
+    border-color: white;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(245, 235, 39);
+    opacity: 0.3;
+}
+.share h3{
+position: relative;
+left: 0;
+top:100px;
+border-bottom: 2px solid;
+
+}
+.qq{
+    position: relative;
+    font-size: 30px;
+    top:90px;
+}
+.ww{
+    position: relative;
+    font-size: 30px;
+    top:90px;
+    left: 20px;
+}
+.ee{
+    position: relative;
+    font-size: 30px;
+    top:90px;
+    left: 40px;
+}
+.share Button{
+    position: relative;
+    font-size: 30px;
+    left: 140px;
+    top:90px;
+    background-color: rgb(245, 200, 20);
+    box-shadow: 20;
+    color: white;
+}

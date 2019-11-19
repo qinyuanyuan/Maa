@@ -1,0 +1,102 @@
+.xiangce{
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+.header h1{
+    position: absolute;
+    color: rgb(192, 86, 72);
+    left: 100px;
+    top: 0px;
+}
+.header img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.image1 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image1 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+  
+}
+.image2 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image2 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+.image3 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image3 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+.image4 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image4 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+.image5 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image5 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+.image6 h3{
+    position: relative;
+    left: 130px;
+    color: rgb(212, 136, 174);
+}
+.image6 img{
+    position: relative;
+    margin: 0px 5px 0px 5px ;
+    left: 200px;
+    height: 80px;
+    width: 80px;
+}
+.footer img{
+    position: absolute;
+    left: 990px;
+    top: 400px;
+    height: 250px;
+    width: 250px;
+}
+.return img{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    bottom: 980px;
+    left: 1200px;
+}
