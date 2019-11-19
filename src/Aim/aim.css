@@ -1,0 +1,125 @@
+.aim{
+    height: 600px;
+}
+.header h1{
+    position: absolute;
+    left: 550px;
+    top: 40px;
+}
+.png{
+    position: relative;
+    left: 1100px;
+}
+.png img{
+    height: 180px;
+    width: 200px;
+}
+.img {
+    position: relative;
+    left: 180px;
+    height: 100px;
+    width: 100px;
+    bottom: 80px;
+}
+.xin h2 {
+    position: absolute;
+    top: 30px;
+    left: 450px;
+    top: 140px;
+}
+.xin img {
+    position: relative;
+    left: 340px;
+    bottom: 50px;
+}
+.aim{
+    color: coral;
+    background-color: bisque;
+    width: 100%;
+    height: 700px;
+}
+.nian input{
+    position: absolute;
+    left: 500px;
+    top: 190px;
+    background-color: bisque;
+}
+.nian h4{
+    position: absolute;
+    left: 560px;
+    top: 170px;
+}
+.yue input{
+    position: absolute;
+    left: 580px;
+    top: 190px;
+    background-color: bisque;
+}
+.yue h4{
+    position: absolute;
+    left: 640px;
+    top: 170px;
+}
+.ri input{
+    position: absolute;
+    left: 660px;
+    top: 190px;
+    background-color: bisque;
+}
+.ri h4{
+    position: absolute;
+    left: 720px;
+    top: 170px;
+}
+.shi input{
+    position: absolute;
+    left: 740px;
+    top: 190px;
+    background-color: bisque;
+}
+.shi h4{
+    position: absolute;
+    left: 800px;
+    top: 170px;
+}
+.div3{
+    position: absolute;
+    border: 1px solid;
+    left: 360px;
+    top: 220px;
+    width: 500px;
+    height: 100px; 
+    background-color: bisque;
+}
+.richeng img  {
+    position: relative;
+    top: 70px;
+    left: 350px;
+    height: 80px;
+    width: 80px;
+}
+.richeng h2{
+    position: absolute;
+    left: 460px;
+    top: 350px;
+    color: coral;
+}
+.div1{
+    position: absolute;
+    border: 1px solid;
+    color: coral;
+    top: 430px;
+    left: 360px;;
+    width: 500px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.footer img {
+    position: relative;
+    top: 0
+    ·px;
+    left: 1000px;
+    height: 200px;
+    width: 150px;
+}

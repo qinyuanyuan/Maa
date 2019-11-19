@@ -1,0 +1,23 @@
+
+.planning{
+    position: relative;
+    left: 600px;
+    top:50px;
+    border: 2px solid;
+    height: 100px;
+    width: 200px;
+    border-radius:25px;
+    border-color:white;
+    box-shadow: 10px 10px 5px #888888;
+    vertical-align:middle;
+}
+ .planning a{
+    font-size: 25px;
+    font-family: "隶书";
+    width: 30%;
+    padding-top: 1px;
+    text-align: center;
+    display: block;
+    float: left;
+    line-height:40px;
+}

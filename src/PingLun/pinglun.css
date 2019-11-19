@@ -1,0 +1,93 @@
+.pinlun{
+        border: 2px solid;
+        height: 100px;
+        width: 200px;
+        border-radius:25px;
+        border-color:white;
+        box-shadow: 10px 10px 5px #888888;
+        vertical-align:middle;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        scrollbar-3dlight-color: antiquewhite;
+        scrollbar-arrow-color: antiquewhite;
+        scrollbar-base-color: azure;
+        scrollbar-shadow-color: beige;
+        scrollbar-darkshadow-color: bisque;
+        scrollbar-face-color:rgb(148, 148, 190);
+        scrollbar-highlight-color: antiquewhite;
+}
+.touxiang1 {
+    position: absolute;
+    border:rgb(243, 232, 228) 1px solid;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 1000px;
+}
+.div1 {
+    position: absolute;
+    border:rgb(240, 225, 219) 1px solid;
+    height: 20px;
+    width: 100px;
+    left:1070px;
+    top: 55px;
+}
+.pinglun1 textarea{
+    position: absolute;
+    left: 1000px;
+    top: 90px;
+    background-color:rgb(209, 174, 161); 
+    opacity: 0.4;  
+}
+.pinglun2 a{
+    position: absolute;
+    border:rgb(247, 235, 230) 1px solid;
+    height: 60px;
+    width: 60px;
+    top: 160px;
+    left: 1000px;
+}
+.pinglun2 p{
+    position: absolute;
+    border:rgb(240, 225, 219) 1px solid;
+    height: 20px;
+    width: 100px;
+    left: 1070px;
+    top: 180px;
+}
+.pinglun2 textarea{
+    position: absolute;
+    left: 1000px;
+    top: 230px;
+    background-color:rgb(209, 174, 161); 
+    opacity: 0.4;  
+}
+.pinglun3 a{
+    position: absolute;
+    border:rgb(233, 225, 222) 1px solid;
+    height: 60px;
+    width: 60px;
+    top: 320px;
+    left: 1000px;
+}
+.pinglun3 p{
+    position: absolute;
+    border:rgb(241, 235, 232) 1px solid;
+    height: 20px;
+    width: 100px;
+    left: 1070px;
+    top: 340px;
+}
+.pinglun3 textarea{
+    position: absolute;
+    left: 1000px;
+    top: 390px;
+    background-color:rgb(209, 174, 161); 
+    opacity: 0.4;  
+}
+.close{
+    position: relative;
+    left: 1260px;
+    bottom: 500px;
+    color: #888888;
+}

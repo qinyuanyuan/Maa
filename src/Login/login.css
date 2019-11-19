@@ -1,0 +1,68 @@
+.stars{
+    background: radial-gradient(200% 100% at bottom center, #facbdf,#f0b0d3,#f7a8c2, #ee87a6);
+    background: radial-gradient(220%,105% at top center,  #ee319f 45%,#e2569c 20%,#e961b5 55%,#ec89b8);
+    height: 585px;
+    width: 1309px;
+}
+.loginbox{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.loginbox h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 5px solid #81cc83;
+    margin-bottom: 50px;
+    padding: 8px 0;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px,0;
+    margin: 8px;
+    border-bottom: 2px solid #7dca80;
+    box-shadow: #b95eb9;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.i001{
+    position: relative;
+    width: 30em;
+    left: 38%;
+    top:10%;
+}
+.sign{
+    position: relative;
+    left: 30px;
+    top:10px;
+    width:100px;
+    background: none;
+    border: 2px solid #fcfeff;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 12px;
+    font-weight: bold;
+    color: #dce5ee;
+}
+.enrol{
+    color: white;
+    position: relative;
+    left: 60px;
+    top: 35px;
+    font-family: "楷书";
+    font-size: 20px;
+}
