@@ -1,11 +1,7 @@
 import  React from 'react'
 import ReactDOM from 'react-dom';
 import {BrowserRouter,Route,Link,} from 'react-router-dom';
-<<<<<<< HEAD
-import {Button,Icon,Calendar} from 'antd'
-=======
 import {Button,Icon,Calendar,Avatar} from 'antd';
->>>>>>> ad2ee0151ce3ffc99cb518b72ad5d1f5a95feb8b
 import HeaderPage from './../Header/header';
 import PlanningPage from '../Planning/planning';
 import LogoPage from '../Logo/logo';

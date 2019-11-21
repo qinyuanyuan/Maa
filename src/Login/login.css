@@ -1,11 +1,12 @@
 .stars{
-    background: radial-gradient(200% 100% at bottom center, #facbdf,#f0b0d3,#f7a8c2, #ee87a6);
-    background: radial-gradient(220%,105% at top center,  #ee319f 45%,#e2569c 20%,#e961b5 55%,#ec89b8);
-    height: 585px;
-    width: 1309px;
+    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
+    position: relative;
+    padding-bottom: 0px;
+    height: 100%;
+    min-height: 750px;
 }
 .loginbox{
-    width: 200px;
+    width: 200px; 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +63,7 @@
     color: white;
     position: relative;
     left: 60px;
-    top: 35px;
+    top: 0px;
     font-family: "楷书";
     font-size: 20px;
 }
