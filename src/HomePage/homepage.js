@@ -1,7 +1,11 @@
 import  React from 'react'
 import ReactDOM from 'react-dom';
 import {BrowserRouter,Route,Link,} from 'react-router-dom';
+import {Button,Icon,Calendar,Avatar} from 'antd';
+import HeaderPage from './../Header/header';
+import PlanningPage from '../Planning/planning';
 import LogoPage from '../Logo/logo';
+var HomePageCss = require('./homepage.css');
 
 export default class HomePage extends React.Component{
     render(){
