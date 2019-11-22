@@ -6,28 +6,27 @@
     min-height: 750px;
 }
 .loginbox{
-    width: 200px; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    border: 1px solid rgb(226, 226, 226);
+    width: 400px;
+    height: 320px;
 }
 .loginbox h1{
     float: left;
     font-size: 40px;
-    border-bottom: 5px solid #81cc83;
     margin-bottom: 50px;
+    margin-left: 135px;
     padding: 8px 0;
 }
 .textbox{
     width: 100%;
     overflow: hidden;
     font-size: 20px;
-    padding: 8px,0;
-    margin: 8px;
-    border-bottom: 2px solid #7dca80;
-    box-shadow: #b95eb9;
+    border-bottom: 1px solid #7dca80;
 }
 .textbox input{
     border: none;
@@ -45,25 +44,17 @@
     left: 38%;
     top:10%;
 }
-.sign{
+.sign,.register{
     position: relative;
     left: 30px;
     top:10px;
-    width:100px;
+    width:300px;
     background: none;
-    border: 2px solid #fcfeff;
+    border: 1px solid #ffffff;
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     margin: 12px;
     font-weight: bold;
     color: #dce5ee;
-}
-.enrol{
-    color: white;
-    position: relative;
-    left: 60px;
-    top: 0px;
-    font-family: "楷书";
-    font-size: 20px;
 }

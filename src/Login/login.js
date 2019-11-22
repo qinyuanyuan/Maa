@@ -49,8 +49,7 @@ export default class LoginPage extends React.Component{
                         <button onClick={this.login}  className={LoginCss.sign}>Sign in</button> 
                         {/* <Link to="/homepage"  className={LoginCss.sign}>Sign in</Link> */}
                         {/* "<button  className={LoginCss.btn}>Sign in</button>" */}
-                        <Link to="/enrol" className={LoginCss.enrol}>注册</Link>
-
+                        <Link to="/enrol"><button className={LoginCss.register}>Sign up</button> </Link>
                 </div>
             </div>
         )
