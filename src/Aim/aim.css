@@ -82,14 +82,16 @@
     left: 800px;
     top: 170px;
 }
-.div3{
+.text1{
     position: absolute;
-    border: 1px solid;
+    border: 1px solid coral;
     left: 360px;
     top: 220px;
     width: 500px;
     height: 100px; 
     background-color: bisque;
+    
+
 }
 .richeng img  {
     position: relative;
