@@ -37,7 +37,7 @@
                    <lable for="male">男</lable>
                  </form>
                   
-                  <Button shape="oval"  icon="" >确定
+                  <Button shape="oval"  icon="" >注册
                    </Button>
                   </div>
                   <Link to="login" className={EnrolCss.return}>
