@@ -50,7 +50,6 @@ export default class LoginPage extends React.Component{
                         {/* <Link to="/homepage"  className={LoginCss.sign}>Sign in</Link> */}
                         {/* "<button  className={LoginCss.btn}>Sign in</button>" */}
                         <Link to="/enrol"><button className={LoginCss.register}>Sign up</button> </Link>
-                        
                 </div>
             </div>
         )
