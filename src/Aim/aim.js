@@ -34,12 +34,12 @@ export default class AimPage extends React.Component{
                         <input type="text" size="4"/>
                         <h4>时</h4>
                     </div>
-                    <div className={AimCss.div3} ></div>
+                   <input type="text" className={AimCss.text1}></input>
               </div>
               <div className={AimCss.richeng} >
                    <img src={require("./../Img/ric1.png")}/>
                    <h2>日程</h2>
-                   <div className={AimCss.div1}></div>
+                   <input type="text" className={AimCss.div1}></input>
               </div> 
               <div className={AimCss.footer} >
                  <img src={require("./../Img/foot1.png")}/>
