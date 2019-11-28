@@ -1,6 +1,3 @@
-
-    
-
    import React from 'react';
    import { Form,Input,Tooltip,Icon, Cascader,Select,Row,Col,Checkbox,Button,AutoComplete,} from 'antd';
    import {Link} from 'react-router-dom'
