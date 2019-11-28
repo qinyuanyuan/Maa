@@ -177,9 +177,7 @@
 }
 .bo{
     background: -webkit-linear-gradient( top, rgb(238, 166, 243),rgb(216, 175, 235),rgb(226, 192, 215));
-    position: relative;
-    left: 800px;
-    top:20px;
+   
     height: 40px;
     box-shadow:-10px 0 10px rgb(122, 119, 124);
     z-index:2;

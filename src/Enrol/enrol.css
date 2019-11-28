@@ -15,10 +15,15 @@ body{
   }
 
   /*css设置样式*/
+  .body{
+    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
+    height:100%;
+    width:100%;
+  }
 .enrol{
     /* background: radial-gradient(200% 100% at bottom center, #cc7357,#771a77,#510b63, #211b46);
     background: radial-gradient(220%,105% at top center, #211b46 45%,#510b63 20%,#771a77 55%,#cc7357); */
-    
+    margin:0px auto;
     height:100%;
     width: 100%;
    
@@ -29,7 +34,7 @@ body{
     height: 400px;
     width: 325px;
     
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .zc h3{
     font-family: "华文彩云";
@@ -37,6 +42,7 @@ body{
     color: rgb(126, 208, 255);
     border-bottom: 3px solid;
     border-color:rgb(126, 208, 255);
+    margin-bottom: 5px;
 }
 .zc input{
     border-bottom: hidden;
