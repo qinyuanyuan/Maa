@@ -8,11 +8,19 @@ var LoginCss = require('./login.css');
 export default class LoginPage extends React.Component{
     constructor(props){
         super(props)
+        this.saveRef = ref => {this.refDom = ref};
+        this.handleClick = this.handleClick.bind(this);
         this.state={
             username:'',
             password:''
         }
     }
+    handleClick(e) {
+        const {clientWidth, clientHeight} = this.refDom;
+        console.log('====================================');
+        console.log(clientWidth, clientHeight, this.refDom);
+        console.log('====================================');
+      }
     changeValue = e=>{
         this.setState({
             [e.target.name]:e.target.value
@@ -30,6 +38,11 @@ export default class LoginPage extends React.Component{
                alert('登录失败');
            }
            console.log(window.localStorage.getItem("username"))
+    }
+    render(){
+        return(
+            <div ref={this.saveRef} onClick={this.handleClick} > Loading...</div>
+        )
     }
     render(){
         return(

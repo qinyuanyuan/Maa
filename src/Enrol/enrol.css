@@ -1,18 +1,40 @@
+/*代码重置*/
+@charset 'utf-8';
+  body, h1, h2, h3, p, ul, ol, form, fieldset, figure, dl, dt, dd {
+      margin: 0;
+      padding: 0;
+  }
+body{
+    height:100%;
+}
+  html {
+      max-width: 1920px;
+      margin: auto;
+      overflow-x: hidden;
+      height:100%;
+  }
+
+  /*css设置样式*/
+  .body{
+    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
+    height:100%;
+    width:100%;
+  }
 .enrol{
     /* background: radial-gradient(200% 100% at bottom center, #cc7357,#771a77,#510b63, #211b46);
     background: radial-gradient(220%,105% at top center, #211b46 45%,#510b63 20%,#771a77 55%,#cc7357); */
-    
-    height: 900px;
+    margin:0px auto;
+    height:100%;
     width: 100%;
-    overflow: hidden;
+   
     background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
 }
 .zc{
-   padding:100px 50px 0px 600px;
+   padding:100px 50px 0px 700px;
     height: 400px;
     width: 325px;
     
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .zc h3{
     font-family: "华文彩云";
@@ -20,6 +42,7 @@
     color: rgb(126, 208, 255);
     border-bottom: 3px solid;
     border-color:rgb(126, 208, 255);
+    margin-bottom: 5px;
 }
 .zc input{
     border-bottom: hidden;
