@@ -4,7 +4,9 @@
     overflow:hidden; 
 }
 .lefttop{
-    background: -webkit-linear-gradient( bottom,rgb(233, 181, 250),rgb(231, 170, 247),rgb(221, 136, 247));
+    /* background: -webkit-linear-gradient( bottom,rgb(233, 181, 250),rgb(231, 170, 247),rgb(221, 136, 247)); */
+    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
+    background-color: rgb(158, 219, 255);
     height: 170px;
     width: 350px;
 }
@@ -36,6 +38,7 @@
     left: 4px;
     top:125px;
     background: -webkit-linear-gradient( top,rgb(232, 173, 252),rgb(224, 169, 241),rgb(231, 175, 248)); 
+    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
     height: 30px;
     width: 344px;
     font-optical-sizing: inherit;
@@ -48,7 +51,7 @@
 .leftdown{
     height: 430px;
     width:350px;
-    background: -webkit-linear-gradient( top,rgb(233, 181, 250),rgb(237, 195, 248),white);
+    background: rgb(158, 219, 255);
     letter-spacing: normal;
     line-height:80px;
     font-size: 15px;
@@ -91,6 +94,7 @@
     left: 100px;
     top:45px;
     background: -webkit-linear-gradient( top, rgb(227, 152, 250),rgb(234, 180, 252),rgb(234, 172, 250));
+    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
     background-color: none;
     height: 25px;
     width: 150px;
