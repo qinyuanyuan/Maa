@@ -11,7 +11,7 @@ export default class EnrolPage extends React.Component {
 
    render() {
       return (
-         <div className={EnrolCss.body}>
+        
             <div className={EnrolCss.enrol}>
 
                <div className={EnrolCss.zc}>
@@ -46,7 +46,7 @@ export default class EnrolPage extends React.Component {
                   <img src={require("./../Img/13.png")} height="50px" width="50px" />
                </Link>
             </div>
-         </div>
+         
       )
    }
 }
