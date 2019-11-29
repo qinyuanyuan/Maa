@@ -18,6 +18,7 @@ import ViewPage from './View/view';
 import ThingPage from './Thing/thing';
 import LogoPage from './Logo/logo';
 
+
 class IndexPage extends React.Component{
     render(){
         return(
