@@ -29,8 +29,8 @@ export default class LoginPage extends React.Component{
     login = e=>{
            console.log(this.state.username)
            console.log(this.state.password)
-           if(this.state.username=="黄子韬"&&this.state.password=="123456"){
-               alert('登陆成功');
+           if(this.state.username=="maa"&&this.state.password=="123456"){
+               alert('登陆成功'); 
                window.localStorage.setItem("username","123456");
                window.localStorage.setItem("token","111111");
                window.location.href="homepage"
