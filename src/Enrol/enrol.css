@@ -111,12 +111,18 @@ body{
     top:10px;
 } */
 
-body{
+body {
+    width:100%;
+    height:100%;
+    
+    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
+}
+
+/* .enrol{
     width:100%;
     height:100%;
     overflow: hidden;
-    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
-}
+} */
 /* .zc{
     padding:100px 50px 0px 700px;
      height: 400px;
@@ -203,6 +209,6 @@ body{
     height:30%;
     align: center;
     opacity: 0.8;
-    margin:5% 0 0px 35%;
+    margin:0 0 20% 35%;
    
 }
