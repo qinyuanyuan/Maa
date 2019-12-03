@@ -2,9 +2,10 @@
 import React from 'react';
 import i001 from './../Img/bg001.png';
 import {Link} from 'react-router-dom';
-import {Button} from 'antd';
+import {Button,input} from 'antd';
 
 var LoginCss = require('./login.css');
+
 export default class LoginPage extends React.Component{
     constructor(props){
         super(props)
