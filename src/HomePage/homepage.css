@@ -41,15 +41,14 @@
     position: absolute;
     left: 4px;
     top:125px;
-    background: -webkit-linear-gradient( top,rgb(232, 173, 252),rgb(224, 169, 241),rgb(231, 175, 248)); 
-    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
+    background: white;
     height: 30px;
     width: 344px;
     font-optical-sizing: inherit;
     font-size: 15px;
     font-style: oblique;
     text-shadow: 15px;
-    color: rgb(181, 252, 164);
+    /* color: rgb(181, 252, 164); */
     opacity: 0.4;
 }
 
@@ -93,8 +92,7 @@
     position: absolute;
     left: 100px;
     top:45px;
-    background: -webkit-linear-gradient( top, rgb(227, 152, 250),rgb(234, 180, 252),rgb(234, 172, 250));
-    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
+    background: white;
     background-color: none;
     height: 25px;
     width: 150px;
