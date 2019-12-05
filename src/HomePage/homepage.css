@@ -16,7 +16,7 @@
     position: relative;
     margin:0px 800px 950px 100px ;
     background-color: rgb(222, 243, 126);
-    background: url("./../Img/QQ截20190628100906.png") no-repeat;
+    /* background: url("./../Img/QQ截20190628100906.png") no-repeat; */
      width:70px;
      height: 40px;
      position: relative;
@@ -100,7 +100,7 @@
     font-size: 15px;
     font-style: oblique;
     text-shadow: 15px;
-    color: rgb(181, 252, 164);
+    color: black;
     border-bottom-style: double;
     border-block-start-color: aqua;
     opacity: 0.3;
@@ -131,8 +131,8 @@ a{
 
 .tz{
     position: relative;
-    bottom: 600px;
-    left: 350px;
+    bottom: 98%;
+    left: 28%;
 }
 
 /* .img{
@@ -151,7 +151,6 @@ a{
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书';
-    /* background: rgb(208, 149, 231);  */
     background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
@@ -166,7 +165,6 @@ a{
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书'; 
-    /* background: rgb(208, 149, 231);  */
     background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
@@ -181,7 +179,6 @@ a{
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书';
-    /* background: rgb(208, 149, 231);  */
     background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
@@ -190,12 +187,14 @@ a{
 }
 
 .bo{
-    /* background: -webkit-linear-gradient( top, rgb(238, 166, 243),rgb(216, 175, 235),rgb(226, 192, 215)); */
+    position: relative;
+    top: 30px;
+    left: 550px;
     background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
     height: 40px;
     box-shadow:-10px 0 10px rgb(122, 119, 124);
     z-index:2;
-    background-color: rgb(238, 182, 145); /* Green */
+    background-color: rgb(238, 182, 145);
     border: none;
     color: white;
     padding: 15px 32px;

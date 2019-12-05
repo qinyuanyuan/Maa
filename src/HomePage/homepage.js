@@ -15,17 +15,16 @@ export default class HomePage extends React.Component{
             <div className={HomePageCss.homepage}>
                 <HeaderPage/>
                 <div className={HomePageCss.lefttop}>
-                   
                     <div className={HomePageCss.touxiang}>
-                    <Link to="/logo">
-                         <Avatar shape="square" size={64} icon="user" />
-                        {/* <a href="/logo" >+</a> */}
-                    </Link>
-                    <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
+                        <Link to="/logo">
+                            <Avatar shape="square" size={64} icon="user" />
+                            {/* <a href="/logo" >+</a> */}
+                        </Link>
+                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
                     <div className={HomePageCss.qiandao}>
                         <a>打卡</a>
-                    <Button shape="oval" type="radius" icon=""></Button>
+                        <Button shape="oval" type="radius" icon=""></Button>
                     </div>
                     <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'/>    
                 </div>
@@ -58,15 +57,15 @@ export default class HomePage extends React.Component{
                     <img src={require("./../Img/home1.jpg")} height="700px" width="1000px"/>
                 </div> */}
                 <div className={HomePageCss.tz}>
-                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.bo}>
-                        退出登录
-                    </Button>
                     <Link to="/thing" className={HomePageCss.th}>记事</Link>
                     <Link to="/view"className={HomePageCss.vi}>查看</Link>
                     <BrowserRouter basename="planning">
                     <Link to="/planning"className={HomePageCss.pl}>规划</Link>
                     <Route path="/planning" component={PlanningPage}></Route>
                     </BrowserRouter>
+                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.bo}>
+                        退出登录
+                    </Button>
                 </div>  
             </div>
         )
