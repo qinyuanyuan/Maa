@@ -3,11 +3,15 @@
     width:1309px;
     overflow:hidden; 
 }
+
 .lefttop{
-    background: -webkit-linear-gradient( bottom,rgb(233, 181, 250),rgb(231, 170, 247),rgb(221, 136, 247));
+    /* background: -webkit-linear-gradient( bottom,rgb(233, 181, 250),rgb(231, 170, 247),rgb(221, 136, 247)); */
+    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
+    background-color: rgb(158, 219, 255);
     height: 170px;
     width: 350px;
 }
+
 .qiandao button{
     position: relative;
     margin:0px 800px 950px 100px ;
@@ -20,6 +24,7 @@
      bottom: 10px;
      border-radius:x/2;
 }
+
 .qiandao a{
     position: relative;
     left:220px;
@@ -30,25 +35,27 @@
     color: rgb(193, 193, 226);
     font-weight: bolder;
 }
+
 .lefttop input{
     border: 0;
     position: absolute;
     left: 4px;
     top:125px;
-    background: -webkit-linear-gradient( top,rgb(232, 173, 252),rgb(224, 169, 241),rgb(231, 175, 248)); 
+    background: white;
     height: 30px;
     width: 344px;
     font-optical-sizing: inherit;
     font-size: 15px;
     font-style: oblique;
     text-shadow: 15px;
-    color: rgb(181, 252, 164);
+    /* color: rgb(181, 252, 164); */
     opacity: 0.4;
 }
+
 .leftdown{
     height: 430px;
     width:350px;
-    background: -webkit-linear-gradient( top,rgb(233, 181, 250),rgb(237, 195, 248),white);
+    background: rgb(158, 219, 255);
     letter-spacing: normal;
     line-height:80px;
     font-size: 15px;
@@ -56,21 +63,15 @@
     font-weight: bolder;
     font-style: normal;
 }
-.aim{
-    color: rgb(153, 144, 144);
+
+.aim,.decorate,.base,.vip{
+    color: rgb(255, 255, 255);
 }
-.decorate{
-    color: rgb(107, 97, 97);
-}
-.base{
-    color: rgb(73, 66, 66);
-}
-.vip{
-    color: rgb(61, 57, 57);
-}
-.establish{
+
+/* .establish{
     color: rgb(46, 43, 43);
-}
+} */
+
  .touxiang{
     position: absolute;
     top: 10px;
@@ -84,13 +85,14 @@
     font-size: 50px;
     font-weight: lighter;
     text-align: center;
- }
- .touxiang input{
+}
+
+.touxiang input{
     border: 0;
     position: absolute;
     left: 100px;
     top:45px;
-    background: -webkit-linear-gradient( top, rgb(227, 152, 250),rgb(234, 180, 252),rgb(234, 172, 250));
+    background: white;
     background-color: none;
     height: 25px;
     width: 150px;
@@ -102,10 +104,12 @@
     border-bottom-style: double;
     border-block-start-color: aqua;
     opacity: 0.3;
- }
- a{
+}
+
+a{
     text-decoration: none;
- }
+}
+
  .righttop{
     position: fixed;
     margin: 0 auto;
@@ -115,26 +119,30 @@
    bottom: 600px;
  
 }
-.righttop img{
+
+/* .righttop img{
     position: fixed;
     left: 350px;
     margin: 0px;
     height:800px;
     width: 1600px;
     opacity: 0.5;
-}
+} */
+
 .tz{
     position: relative;
     bottom: 600px;
     left: 350px;
 }
-.img{
+
+/* .img{
     position: relative;
     left: 100px;
     bottom: 400px;
     background-color: aquamarine;
   
-} 
+}  */
+
 .th{
     position: relative;
     left: 100px;
@@ -143,11 +151,13 @@
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书';
-    background: rgb(208, 149, 231); 
+    /* background: rgb(208, 149, 231);  */
+    background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
-    border-radius: 50px;;
+    border-radius: 50px;
 }
+
 .vi{
     position: relative;
     left:250px;
@@ -156,11 +166,13 @@
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书'; 
-    background: rgb(208, 149, 231); 
+    /* background: rgb(208, 149, 231);  */
+    background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
     border-radius: 50px;;
 }
+
 .pl{
     position: relative;
     left: 400px;
@@ -169,15 +181,17 @@
     color: rgb(246, 246, 248);
     font-style: initial;
     font-family: '隶书';
-    background: rgb(208, 149, 231); 
+    /* background: rgb(208, 149, 231);  */
+    background-color: rgb(158, 219, 255);
     -moz-border-radius: 500px; 
     -webkit-border-radius: 100px; 
     border-radius: 50px;
     overflow: hidden;
 }
+
 .bo{
-    background: -webkit-linear-gradient( top, rgb(238, 166, 243),rgb(216, 175, 235),rgb(226, 192, 215));
-   
+    /* background: -webkit-linear-gradient( top, rgb(238, 166, 243),rgb(216, 175, 235),rgb(226, 192, 215)); */
+    background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
     height: 40px;
     box-shadow:-10px 0 10px rgb(122, 119, 124);
     z-index:2;
@@ -190,6 +204,7 @@
     display: inline-block;
     font-size: 16px;
 }
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -197,6 +212,7 @@
     width: 1080px;
     height:640px;
 }
+
 .container img{
     position: absolute;
     width: 1080px;
@@ -217,9 +233,11 @@
     font-weight: bolder;
     cursor: pointer;
 }
+
 #prev:hover{
     background-color: rgba(121, 253, 209,0.5);
 }
+
 #next{
     display: flex;
     justify-content:center;
@@ -231,9 +249,11 @@
     font-weight: bolder;
     cursor: pointer;
 }
+
 #next:hover{
     background-color: rgba(121, 253, 209,0.5);
 }
+
 .numbers{
     display:flex;
     align-items: center;
@@ -243,7 +263,6 @@
     position: absolute;
     left: 0;
     top: 600px;
-
 }
 
 .numbers div{    
@@ -256,9 +275,11 @@
     border: 1px solid rgb(8, 129, 4);
     cursor: pointer;
 }
+
 .numbers div:hover{
     background-color: rgba(121, 253, 209,0.5);
 }
+
 .current{
     background-color: red !important;
 }
