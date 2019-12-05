@@ -22,10 +22,10 @@ export default class HomePage extends React.Component{
                         </Link>
                         <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
-                    <div className={HomePageCss.qiandao}>
+                    {/* <div className={HomePageCss.qiandao}>
                         <a>打卡</a>
                         <Button shape="oval" type="radius" icon=""></Button>
-                    </div>
+                    </div> */}
                     <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'/>    
                 </div>
                 <div className={HomePageCss.leftdown}>
@@ -63,10 +63,10 @@ export default class HomePage extends React.Component{
                     <Link to="/planning"className={HomePageCss.pl}>规划</Link>
                     <Route path="/planning" component={PlanningPage}></Route>
                     </BrowserRouter>
-                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.bo}>
-                        退出登录
-                    </Button>
                 </div>  
+                <div>
+                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.exit}>退出登录</Button>
+                </div>
             </div>
         )
     }

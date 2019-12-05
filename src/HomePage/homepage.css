@@ -5,18 +5,16 @@
 }
 
 .lefttop{
-    /* background: -webkit-linear-gradient( bottom,rgb(233, 181, 250),rgb(231, 170, 247),rgb(221, 136, 247)); */
-    /* background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8); */
     background-color: rgb(158, 219, 255);
     height: 170px;
     width: 350px;
 }
 
-.qiandao button{
+/* .qiandao button{
     position: relative;
     margin:0px 800px 950px 100px ;
     background-color: rgb(222, 243, 126);
-    /* background: url("./../Img/QQ截20190628100906.png") no-repeat; */
+    background: url("./../Img/QQ截20190628100906.png") no-repeat;
      width:70px;
      height: 40px;
      position: relative;
@@ -34,7 +32,7 @@
     text-decoration:blink;
     color: rgb(193, 193, 226);
     font-weight: bolder;
-}
+} */
 
 .lefttop input{
     border: 0;
@@ -186,12 +184,11 @@ a{
     overflow: hidden;
 }
 
-.bo{
-    position: relative;
-    top: 30px;
-    left: 550px;
+.exit{
+    position: fixed;
+    bottom: 0%;
     background: radial-gradient(200% 100% at bottom center,rgb(126, 208, 255), #f8f8f8);
-    height: 40px;
+    /* height: 40px;
     box-shadow:-10px 0 10px rgb(122, 119, 124);
     z-index:2;
     background-color: rgb(238, 182, 145);
@@ -201,7 +198,7 @@ a{
     text-align: start;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 16px; */
 }
 
 .container{
