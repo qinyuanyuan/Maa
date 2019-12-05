@@ -1,42 +1,19 @@
 .aim{
     height: 600px;
 }
-
 .header h1{
-    position: absolute;
-    left: 550px;
-    top: 40px;
+   margin:3% 0 0 45%;
     color: rgb(126, 208, 255);
 }
-.png{
-    position: relative;
-    left: 1100px;
-}
-.png img{
-    height: 180px;
-    width: 200px;
-}
-
 .xin h2 {
-    position: absolute;
-    top: 100px;
-    left: 450px;
-    top: 140px;
-    margin-top: 50px;
-    
-}
-.xin img {
-    position: relative;
-    left: 340px;
-    bottom: 50px;
+    margin:1% 0 0 40%;
 }
 .aim{
     color: coral;
-
     width: 100%;
     height: 700px;
 }
-.nian input{
+/* .nian input{
     position: absolute;
     left: 500px;
     top: 190px;
@@ -79,45 +56,36 @@
     position: absolute;
     left: 800px;
     top: 170px;
-}
+} */
 .text1{
-    position: absolute;
+    
     border: 1px solid coral;
-    left: 440px;
-    top: 240px;
+    margin:2% 0 0 38%;
     width: 500px;
     height: 100px; 
 }
-.richeng img  {
-    position: relative;
-    top: 70px;
-    left: 350px;
-    height: 80px;
-    width: 80px;
-}
 .richeng h2{
-    position: absolute;
-    left: 450px;
-    top: 350px;
-    
-    
-}
-.div1{
-    position: absolute;
-    border: 1px solid;
-    color: coral;
-    top: 430px;
-    left: 360px;;
-    width: 500px;
-    height: 100px;
-
+    margin:1% 0 0 40%;
 }
 .text2{
    
     border: 1px solid coral;
-    left: 360px;
-    margin:18.3% 0 0 4.5%;
+   
+    margin:0.5% 0 0 38%;
     width: 500px;
     height: 100px; 
 }
+.time ul{
+list-style-type: none;
+background-color: rgb(126, 208, 255);
+width: 400px;
+height:55px;
+margin-left:43% ;
+position: absolute;
+top:18%;
+}
 
+.time h4{
+    margin-left: 95%;
+    
+}
