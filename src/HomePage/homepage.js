@@ -51,6 +51,11 @@ export default class HomePage extends React.Component{
                             <Icon type="right" />
                         </Link>
                         <br></br>
+                        <Link to="/login"className={HomePageCss.exit}>
+                            退出登录&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <Icon type="right" />
+                        </Link>
+                        <br></br>
                     </text>
                 </div>
                 {/* <div className={HomePageCss.righttop}>
@@ -64,9 +69,9 @@ export default class HomePage extends React.Component{
                     <Route path="/planning" component={PlanningPage}></Route>
                     </BrowserRouter>
                 </div>  
-                <div>
+                {/* <div>
                     <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.exit}>退出登录</Button>
-                </div>
+                </div> */}
             </div>
         )
     }
