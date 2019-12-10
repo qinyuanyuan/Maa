@@ -5,6 +5,7 @@ import {Button,Icon,Calendar,Avatar} from 'antd';
 import HeaderPage from './../Header/header';
 import PlanningPage from '../Planning/planning';
 import LogoPage from '../Logo/logo';
+import AimPage from '../Aim/aim';
 var HomePageCss = require('./homepage.css');
 
 export default class HomePage extends React.Component{
@@ -22,27 +23,23 @@ export default class HomePage extends React.Component{
                         </Link>
                         <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
-                    {/* <div className={HomePageCss.qiandao}>
-                        <a>打卡</a>
-                        <Button shape="oval" type="radius" icon=""></Button>
-                    </div> */}
                     <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'/>    
                 </div>
                 <div className={HomePageCss.leftdown}>
                     <text>
                         <Link to="/aim" className={HomePageCss.aim}>
-                            我的小目标&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            小目标&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             <Icon type="right" />
                         </Link>
                         <br></br>
                         <Link to="/decorate" className={HomePageCss.decorate}>
-                            个性装扮&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            个性装扮&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             <Icon type="right" />
                         </Link>
                         {/* <Icon type=""/> */}
                         <br></br>
                         <Link to="/base"className={HomePageCss.base}>
-                            我的手账基地&nbsp; &nbsp; &nbsp; &nbsp;
+                            手账基地&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             <Icon type="right" />
                         </Link>
                         <br></br>
@@ -65,13 +62,10 @@ export default class HomePage extends React.Component{
                     <Link to="/thing" className={HomePageCss.th}>记事</Link>
                     <Link to="/view"className={HomePageCss.vi}>查看</Link>
                     <BrowserRouter basename="planning">
-                    <Link to="/planning"className={HomePageCss.pl}>规划</Link>
-                    <Route path="/planning" component={PlanningPage}></Route>
+                        <Link to="/planning"className={HomePageCss.pl}>规划</Link>
+                        <Route path="/planning" component={PlanningPage}></Route>
                     </BrowserRouter>
                 </div>  
-                {/* <div>
-                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.exit}>退出登录</Button>
-                </div> */}
             </div>
         )
     }
