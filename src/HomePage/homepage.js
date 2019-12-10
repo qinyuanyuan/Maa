@@ -15,18 +15,17 @@ export default class HomePage extends React.Component{
             <div className={HomePageCss.homepage}>
                 <HeaderPage/>
                 <div className={HomePageCss.lefttop}>
-                   
                     <div className={HomePageCss.touxiang}>
-                    <Link to="/logo">
-                         <Avatar shape="square" size={64} icon="user" />
-                        {/* <a href="/logo" >+</a> */}
-                    </Link>
-                    <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
+                        <Link to="/logo">
+                            <Avatar shape="square" size={64} icon="user" />
+                            {/* <a href="/logo" >+</a> */}
+                        </Link>
+                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
-                    <div className={HomePageCss.qiandao}>
+                    {/* <div className={HomePageCss.qiandao}>
                         <a>打卡</a>
-                    <Button shape="oval" type="radius" icon=""></Button>
-                    </div>
+                        <Button shape="oval" type="radius" icon=""></Button>
+                    </div> */}
                     <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'/>    
                 </div>
                 <div className={HomePageCss.leftdown}>
@@ -52,15 +51,17 @@ export default class HomePage extends React.Component{
                             <Icon type="right" />
                         </Link>
                         <br></br>
+                        <Link to="/login"className={HomePageCss.exit}>
+                            退出登录&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <Icon type="right" />
+                        </Link>
+                        <br></br>
                     </text>
                 </div>
                 {/* <div className={HomePageCss.righttop}>
                     <img src={require("./../Img/home1.jpg")} height="700px" width="1000px"/>
                 </div> */}
                 <div className={HomePageCss.tz}>
-                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.bo}>
-                        退出登录
-                    </Button>
                     <Link to="/thing" className={HomePageCss.th}>记事</Link>
                     <Link to="/view"className={HomePageCss.vi}>查看</Link>
                     <BrowserRouter basename="planning">
@@ -68,6 +69,9 @@ export default class HomePage extends React.Component{
                     <Route path="/planning" component={PlanningPage}></Route>
                     </BrowserRouter>
                 </div>  
+                {/* <div>
+                    <Button style={{backgroundColor:'#F0F2F5'}} onClick={()=>{window.location.href="login"}} className={HomePageCss.exit}>退出登录</Button>
+                </div> */}
             </div>
         )
     }
