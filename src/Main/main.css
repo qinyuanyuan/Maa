@@ -1,9 +1,9 @@
-/* .main{
-    height: 600px;
-    width: 1309px;
-    background-color: #eed3fa;
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #eed3fa; */
     overflow: hidden;
-} */
+}
 .header h2{
     font-family: '隶书' ;
     color:white;

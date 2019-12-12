@@ -68,13 +68,11 @@ export default class MainPage extends React.Component {
         <div className={MainCss.one}>
           <img src={require('./../Img/s.png')} className="" alt="" />
           <h4>one</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
         <div className={MainCss.two}>
           <img src={require('./../Img/t.png')} className="" alt="" />
           <h4>two</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
         <div className={MainCss.footer}>
@@ -84,14 +82,12 @@ export default class MainPage extends React.Component {
             <img src={require('./../Img/u.png')} className="" alt="" />
           </div>
           <div className={MainCss.text}>
-            <input type="text" />
           </div>
           <div className={MainCss.textarea}>
             <textarea cols="53" rows="5"></textarea>
           </div>
           <img className={MainCss.img1} src={require('./../Img/i.png')} alt="" />
           <h4>two</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
       </div>
