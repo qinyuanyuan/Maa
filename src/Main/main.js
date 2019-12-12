@@ -32,12 +32,6 @@ export default class MainPage extends React.Component {
             <img src={require('./../Img/go3.png')} height="60px" width="60px" className="" alt="" />
           </Link>
         </div>
-        <div className={MainCss.go}>
-          <h4>希望主人玩得开心！我会在家乖乖等你的哦！</h4>
-        </div>
-        <div className={MainCss.back}>
-          <h4>终于等到主人回家了！</h4>
-        </div>
         <div className={MainCss.nian}>
           <input type="text" size="4" />
           <h4>年</h4>

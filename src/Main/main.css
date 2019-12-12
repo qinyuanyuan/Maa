@@ -12,21 +12,7 @@
     top: 110px;
     font-size: 40px;
 }
-.go h4{
-    color: white;
-    position: absolute;
-    top: 180px;
-    left: 120px;
-}
-.back{
-    position: absolute;
-    color: rgb(241, 214, 181);
-    top: 180px;
-    left: 800px;
-}
-.back h4{
-    color:white;
-}
+
 .nian input{
     position: absolute;
     top: 250px;
