@@ -1,19 +1,9 @@
 .daily{
-    height: 600px;
-    width: 1309px;
-    background-color: rgb(176, 248, 224);
-    overflow-y: hidden;
+    /* height: 100%;
+    width: 100%; */
+    overflow: hidden;
 }
-.bu Button{
-    background: url('./../Img/home1.jpg') no-repeat;
-    height: 50px;
-    width: 100px;
-    position: relative;
-    top:450px;
-    left: 600px;
-    font-size: 30px;
-    color: aliceblue;
-}
+
 .img1 h3{
     position: absolute;
     top: 150px;
@@ -21,15 +11,25 @@
     font-weight: bolder;
     color: rgb(182, 174, 65);
     font-style: oblique;
-
 }
+
 .img1 img{
     height: 200px;
     width: 200px;
     position: relative;
     left: 140px;
     top:30px;
+}
 
+.bu Button{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top:70%;
+    left: 42%;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: rgb(143, 210, 255);
 }
 
 .qq{
@@ -37,16 +37,18 @@
     right: 200px;
    bottom: 340px;
 }
+
 .img2 textarea{
     position: relative;
     left: 60px;
     bottom: 727px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border-color: rgb(39, 39, 9);
     font-size: 20px;
     color: rgb(68, 143, 209);
     font-weight: bolder;
 }
+
 .img6 h3{
     position: absolute;
     top: 150px;
@@ -56,6 +58,7 @@
     font-style: oblique;
     
 }
+
 .img6 img{
     height: 200px;
     width: 200px;
@@ -69,17 +72,17 @@
      top:30px;
      right: 240px;;
 }
+
 .img7 textarea{
     position: relative;
     left: 200px;
     bottom: 522.5px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border-color: rgb(39, 39, 9);
     font-size: 20px;
     color: rgb(176, 209, 238);
     font-weight: bolder;
 }
-
 
 .image1 h3{
     position: absolute;
@@ -89,6 +92,7 @@
     color: rgb(182, 174, 65);
     font-style: oblique;
 }
+
 .image1 img{
     height: 200px;
     width: 200px;
@@ -102,22 +106,25 @@
     right: 10px;
     bottom: 50px;
 }
+
 .image2 textarea{
     position: absolute;;
     left: 320px;
     top: 268px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border-color: rgb(39, 39, 9);
     font-size: 20px;
     color: rgb(176, 209, 238);
     font-weight: bolder;
 }
+
 .dailymorning{
     position: absolute;
     top: 0px;
     width: 300px;
     height: 800px;
 }
+
 .dailyafternoon{
     position: absolute;
     left:300px;
@@ -125,6 +132,7 @@
     width: 300px;
     height: 800px;
 }
+
 .dailynight{
     position: absolute;
     left:600px;
@@ -132,10 +140,10 @@
     width: 300px;
     height: 800px;
 }
+
 .bo Button {
-    position: relative;
-    bottom: 40px;
-    left: 1200px;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
 	width: 60px;
 	height: 40px; 
 	border-width: 0px;
@@ -144,7 +152,6 @@
 	cursor: pointer; 
 	outline: none; 
 	font-family: "Microsoft YaHei"; 
-	color: rgb(155, 236, 212);
+	color: rgb(117, 227, 255);
 	font-size: 17px; 
 }
-

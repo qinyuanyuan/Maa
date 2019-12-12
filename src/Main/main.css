@@ -116,21 +116,15 @@
 }
 .one h4{
     position: absolute;
-    left: 130px;
-    top: 260px;
+    left: 8%;
+    top: 40%;
     font-size: 20px;
 }
-.one input{
-    position: absolute;
-    left: 170px;
-    top: 296px; 
-    border:1px solid #ffcc00;
-    background:#fffff7
-}
+
 .one textarea{
     position: absolute;
-    top: 320px;
-    left: 115px;
+    top: 45%;
+    left: 8%;
     border:1px solid #e3e197;
     background:#ffffdd
   
@@ -141,30 +135,23 @@
     top: 80px;
 }
 .two h4{
-    position: relative;
-    left: 130px;
-    top: 30px;
+    position: absolute;
+    left: 8%;
+    top: 62%;
     font-size: 20px;
 }
-.two input{
-    position: absolute;
-    left: 170px;
-    top: 425px;
-    border:1px solid #ffcc00;
-    background:#fffff7
-}
+
 .two textarea{
     position: absolute;
-    top: 448px;
-    left: 115px;
+    top: 67%;
+    left: 8%;
     border:1px solid #e3e197;
     background:#ffffdd
 }
 .img2{
     position: absolute;
-    left: 720px;
-    bottom: 0;
-
+    right: 0%;
+    bottom: 0%;
 }
 .three img{
     position: absolute;
@@ -173,56 +160,41 @@
 }
 .footer h5{
     position: absolute;
-    right: 550px;
-    top: 255px;
+    right: 50%;
+    top: 40%;
     font-size: 20px;  
     color:  rgb(168, 172, 112);
 }
-.text{
-    position: absolute;
-    right: 0px;
-    bottom: 713px;
-    border:1px solid #bfd1eb;
-    background:#f3faff
-}
+
 .textarea{
     position: absolute;
-    bottom: 713px;
-    right: 0px;
+    top: 45%;
+    right: 25%;
     border:1px solid #9bdf70;
     background:#f0fbeb
 }
 
 .img1{
     position: absolute;
-    right: 600px;
-    top:400px;
+    right: 45%;
+    top: 60%;
 }
 .footer h4{
     position: absolute;
-    right: 550px;
-    top: 390px;
+    right: 50%;
+    top: 62%;
     font-size: 20px;  
 }
-.footer input{
-    position: absolute;
-    right: 370px;
-    top: 427px;
-    border:1px solid #bfd1eb;
-    background:#f3faff
-}
+
 .footer textarea{
     position: absolute;
-    top: 450px;
-    right: 200px;
+    top: 67%;
+    right: 25%;
     border:1px solid #9bdf70;
     background:#f0fbeb
 } 
 .return img{
     position: absolute;
-    top:10px;
-    right: 0;
-}
-.rq{
-    
+    top:0%;
+    right: 0%;
 }
