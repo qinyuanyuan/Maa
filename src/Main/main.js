@@ -33,10 +33,8 @@ export default class MainPage extends React.Component {
           </Link>
         </div>
         <div className={MainCss.go}>
-          <h4>希望主人玩得开心！我会在家乖乖等你的哦！</h4>
         </div>
         <div className={MainCss.back}>
-          <h4>终于等到主人回家了！</h4>
         </div>
         <div className={MainCss.nian}>
           <input type="text" size="4" />
@@ -74,13 +72,11 @@ export default class MainPage extends React.Component {
         <div className={MainCss.one}>
           <img src={require('./../Img/s.png')} className="" alt="" />
           <h4>one</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
         <div className={MainCss.two}>
           <img src={require('./../Img/t.png')} className="" alt="" />
           <h4>two</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
         <div className={MainCss.footer}>
@@ -89,15 +85,11 @@ export default class MainPage extends React.Component {
           <div className={MainCss.three}>
             <img src={require('./../Img/u.png')} className="" alt="" />
           </div>
-          <div className={MainCss.text}>
-            <input type="text" />
-          </div>
           <div className={MainCss.textarea}>
             <textarea cols="53" rows="5"></textarea>
           </div>
           <img className={MainCss.img1} src={require('./../Img/i.png')} alt="" />
           <h4>two</h4>
-          <input type="text" />
           <textarea cols="53" rows="5"></textarea>
         </div>
       </div>
