@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import PingLunPage from '../PingLun/pinglun';
 import WirtePage from '../Wirte/wirte';
-import { Icon } from 'antd';
 import SharePage from './Share/share';
 
 var ViewCss = require('./view.css');
