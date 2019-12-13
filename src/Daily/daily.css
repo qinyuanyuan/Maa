@@ -1,8 +1,8 @@
 .daily{
-    height: 600px;
-    width: 1309px;
-    background-color: rgb(176, 248, 224);
-    overflow-y: hidden;
+    width:80px;
+    height:300px;
+    /* background-color: rgb(176, 248, 224); */
+    overflow: hidden;
 }
 .bu Button{
     background: url('./../Img/home1.jpg') no-repeat;
