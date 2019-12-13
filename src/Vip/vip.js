@@ -8,7 +8,10 @@ var VIPCss = require('./vip.css');
 export default class VipPage extends React.Component {
     render() {
         return (
+            <div>
+                <img src={require("./../Img/13.png")} height="50px" width="50px" />
             <div className={VIPCss.all}>
+                
                 <div>
                     <ul><li className={VIPCss.VIP}>VIP &nbsp; 会员中心</li>
                         <li><a class={VIPCss.active} href="/homepage">主页</a></li>
@@ -41,6 +44,7 @@ export default class VipPage extends React.Component {
                         <input className={VIPCss.p2} type="button" value="请按心情付款哦！"></input>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }
