@@ -9,7 +9,7 @@ export default class VipPage extends React.Component {
     render() {
         return (
             <div>
-                <img src={require("./../Img/13.png")} height="50px" width="50px" />
+                <a type=" "href="/"><img src={require("./../Img/13.png")} height="50px" width="50px" /></a>
             <div className={VIPCss.all}>
                 
                 <div>
