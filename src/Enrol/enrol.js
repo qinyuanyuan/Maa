@@ -16,6 +16,9 @@ export default class EnrolPage extends React.Component {
 
                <div className={EnrolCss.zc}>
                   <h3>注册</h3>
+                  <input type="text" ref={input => this.input} className={EnrolCss.ID} placeholder="请输入ID " />
+                  <br />
+
                   <Icon type="user" className={EnrolCss.user} />
                   <input type="text" ref={input => this.input} className={EnrolCss.zhanghao} placeholder="请输入账号 " />
                   <br />
