@@ -41,11 +41,23 @@ export default class LoginPage extends React.Component{
             if(xhr.readyState==4){
                if(xhr.status==200){
                    message.info(xhr.respondeText)
+                   console.log(xhr.respondeText)
+                   var result = JSON.parse(xhr.respondeText)
+                   if(result.state==3){
+                       message.info("用户名或密码不能为空")
+                   }else if(result.state==2){
+                    message.info("用户名或密码错误")
+                   }else if(result.state==1){
+                       message.info("成功")
+                       this.props.history.push("/homepage")
+                   }
                }else{
                    message.info(xhr.status)
                }
             }
         }
+
+        xhr.setRequestHeader('content-type','application/json');
         xhr.send(JSON.stringify(data))
 
         //     if(this.state.username=="maa"&&this.state.password=="123456"){
