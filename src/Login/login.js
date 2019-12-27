@@ -2,18 +2,18 @@
 import React from 'react';
 import i001 from './../Img/bg001.png';
 import {Link} from 'react-router-dom';
-import {Button,input} from 'antd';
+import {Button,input,message} from 'antd';
 
 var LoginCss = require('./login.css');
 
 export default class LoginPage extends React.Component{
     constructor(props){
         super(props)
-        this.saveRef = ref => {this.refDom = ref};
-        this.handleClick = this.handleClick.bind(this);
+        // this.saveRef = ref => {this.refDom = ref};
+        // this.handleClick = this.handleClick.bind(this);
         this.state={
-            username:'',
-            password:''
+            // username:'',
+            // password:''
         }
     }
     handleClick(e) {
@@ -22,23 +22,41 @@ export default class LoginPage extends React.Component{
         console.log(clientWidth, clientHeight, this.refDom);
         console.log('====================================');
       }
-    changeValue = e=>{
+    changeValue = (e)=>{
         this.setState({
             [e.target.name]:e.target.value
         })
     }
-    login = e=>{
+    login = (e)=>{
            console.log(this.state.username)
            console.log(this.state.password)
-           if(this.state.username=="maa"&&this.state.password=="123456"){
-               alert('登陆成功'); 
-               window.localStorage.setItem("username","123456");
-               window.localStorage.setItem("token","111111");
-               window.location.href="homepage"
-           }else{
-               alert('登录失败');
-           }
-           console.log(window.localStorage.getItem("username"))
+
+        var xhr = new XMLHttpRequest()
+        var data ={
+            "usename":this.state.username,
+            "password":this.state.password
+        }
+        xhr.open("get","/login")
+        xhr.onreadystatechange=function(params){
+            if(xhr.readyState==4){
+               if(xhr.status==200){
+                   message.info(xhr.respondeText)
+               }else{
+                   message.info(xhr.status)
+               }
+            }
+        }
+        xhr.send(JSON.stringify(data))
+
+        //     if(this.state.username=="maa"&&this.state.password=="123456"){
+        //        alert('登陆成功'); 
+        //        window.localStorage.setItem("username","123456");
+        //        window.localStorage.setItem("token","111111");
+        //        window.location.href="homepage"
+        //    }else{
+        //        alert('登录失败');
+        //    }
+        //    console.log(window.localStorage.getItem("username"))
     }
     render(){
         return(
