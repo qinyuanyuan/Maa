@@ -9,11 +9,45 @@ import AimPage from '../Aim/aim';
 var HomePageCss = require('./homepage.css');
 
 export default class HomePage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={}
+     }
+    changeValue=(e)=>{
+       this.setState({
+          [e.target.name]:e.target.value
+       })
+    }
+    upload = ()=>{
+       //XHR
+       var xhr = new XMLHttpRequest() 
+       var data={
+          "content":this.state.content,
+       }
+       //open连接
+       xhr.open("post","/sign/write")
+       //配置响应函数
+       xhr.onreadystatechange=function(){
+          if(xhr.readyState==4){
+             if(xhr.status==200){
+               console.log(xhr.responseText)
+               var result = JSON.parse(xhr.responseText)
+               if(result.state==1){
+                  alert("设置签名成功！")
+               }
+             }
+          }
+       }
+       //发送数据
+       xhr.setRequestHeader('content-type','application/json');
+       xhr.send(JSON.stringify(data))
+    }
+
     render(){
 
         return(
           
-            <div className={HomePageCss.homepage}>
+            <div className={HomePageCss.homepage}onClick={this.upload}>
                 <HeaderPage/>
                 <div className={HomePageCss.lefttop}>
                     <div className={HomePageCss.touxiang}>
@@ -23,7 +57,7 @@ export default class HomePage extends React.Component{
                         </Link>
                         <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
                     </div>
-                    <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'/>    
+                    <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'name="content" value={this.state.content} onChange={e=>this.changeValue(e)} />   
                 </div>
                 <div className={HomePageCss.leftdown}>
                     <text>
