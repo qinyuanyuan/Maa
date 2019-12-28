@@ -27,7 +27,7 @@ export default class LoginPage extends React.Component{
             [e.target.name]:e.target.value
         })
     }
-    login = (e)=>{
+    login = ()=>{
            console.log(this.state.username)
            console.log(this.state.password)
 
@@ -36,7 +36,7 @@ export default class LoginPage extends React.Component{
             "usename":this.state.username,
             "password":this.state.password
         }
-        xhr.open("get","/login")
+        xhr.open("get","/user/login")
         xhr.onreadystatechange=function(params){
             if(xhr.readyState==4){
                if(xhr.status==200){
@@ -82,10 +82,10 @@ export default class LoginPage extends React.Component{
                 <div className={LoginCss.loginbox}>
                     <h1>Login</h1>
                     <div className={LoginCss.textbox}>
-                        <input type="text"  name="username" id="username" placeholder="Username" value={this.state.username} onChange={this.changeValue}/>
+                        <input type="text"  name="username" id="username" placeholder="Username" value={this.state.username} onChange={e=>this.changeValue(e)}/>
                     </div>
                     <div className={LoginCss.textbox}>
-                        <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={this.changeValue}/>
+                        <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={e=>this.changeValue(e)}/>
                     </div>
                     {/* <Button onClick={()=>{window.location.href="homepage"} }className="r-button" >
                         <button onClick={this.login}>Sign in</button> 
