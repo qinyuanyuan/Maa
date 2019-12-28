@@ -36,7 +36,7 @@ export default class LoginPage extends React.Component{
             "usename":this.state.username,
             "password":this.state.password
         }
-        xhr.open("get","/login")
+        xhr.open("get","/user/login")
         xhr.onreadystatechange=function(params){
             if(xhr.readyState==4){
                if(xhr.status==200){
@@ -45,11 +45,14 @@ export default class LoginPage extends React.Component{
                    var result = JSON.parse(xhr.respondeText)
                    if(result.state==3){
                        message.info("用户名或密码不能为空")
+                       alert("用户名或密码不能为空")
                    }else if(result.state==2){
                     message.info("用户名或密码错误")
+                    alert("用户名或密码错误")
                    }else if(result.state==1){
                        message.info("成功")
-                       this.props.history.push("/homepage")
+                       alert("登录成功")
+                    //    this.props.history.push("/homepage")
                    }
                }else{
                    message.info(xhr.status)
