@@ -5,6 +5,41 @@ import moment from 'moment';
 var MainCss = require('./main.css');
 
 export default class MainPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+  changeValue = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+  commit = () => {
+    var xhr = new XMLHttpRequest()
+    var data={
+      "beforetime":this.state.beforetime,
+      "aftertime":this.state.aftertime,
+      "text1":this.state.text1,
+      "text2":this.state.text2,
+      "text3":this.state.text3,
+      "text4":this.state.text4,
+    }
+    xhr.open("post", "/in/addTtripItinerary")
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState==4){
+        if(xhr.status==200){
+          var result = JSON.parse(xhr.responseText)
+          if(result.state==2){
+            alert("内容不能为空")
+          }else if(result.state==1){
+            alert("提交成功")
+          }
+        }
+      }
+    }
+    xhr.setRequestHeader('content-type','application/json');
+    xhr.send(JSON.stringify(data))
+  }
   render() {
     return (
       <div className={MainCss.main}>
