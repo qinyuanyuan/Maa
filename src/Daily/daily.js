@@ -22,7 +22,7 @@ export default class DailyPage extends React.Component {
         }
 
         //fetch
-        fetch("/addDaliySchedule", {
+        fetch("/sc/addDaliySchedule", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
@@ -118,7 +118,7 @@ export default class DailyPage extends React.Component {
                 </div>
                 <div className={DailyCss.bu}>
 
-                    <Button shape="oval" type="radius" icon="" onClick={this.commit}>ok</Button>
+                    <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
                 </div>
                 <div className={DailyCss.bo}>
                     <Button style={{ backgroundColor: '#F0F2F5' }}
