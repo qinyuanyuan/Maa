@@ -24,7 +24,7 @@ export default class MainPage extends React.Component {
       "text3":this.state.text3,
       "text4":this.state.text4,
     }
-    xhr.open("post", "/addTtripSchedule")
+    xhr.open("post", "/in/addTtripItinerary")
     xhr.onreadystatechange = function () {
       if(xhr.readyState==4){
         if(xhr.status==200){
