@@ -33,7 +33,7 @@ export default class LoginPage extends React.Component{
 
         var xhr = new XMLHttpRequest()
         var data ={
-            "usename":this.state.username,
+            "username":this.state.username,
             "password":this.state.password
         }
         xhr.open("get","/user/login")
@@ -43,6 +43,7 @@ export default class LoginPage extends React.Component{
                    console.log(xhr.respondeText)
                    var result = JSON.parse(xhr.respondeText)
                    if(result.state==3){
+
                        alert("用户名或密码不能为空")
                    }else if(result.state==2){
                     alert("用户名或密码错误")

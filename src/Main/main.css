@@ -35,8 +35,53 @@
     position: absolute;
     top: 250px;
     left: 130px;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    background-color: #eed3fa;
+}
+
+.nian h4{
+    position: absolute;
+    top: 228px;
+    left: 190px;
+}
+
+.yue input{
+    position: absolute;
+    top: 250px;
+    left: 207px;
+    background-color: #eed3fa; 
+}
+
+.yue h4{
+    position: absolute;
+    top: 228px;
+    left: 268px;
+}
+
+.ri input{
+    position: absolute;
+    top: 250px;
+    left: 285px; 
+    background-color: #eed3fa;
+}
+
+.ri h4{
+    position: absolute;
+    top: 228px;
+    left: 346px; 
+    /* color: rgb(61, 156, 125); */
+}
+
+.shi input{
+    position: absolute;
+    top: 250px;
+    left: 362px;
+    background-color: #eed3fa;
+}
+
+.shi h4{
+    position: absolute;
+    top: 228px;
+    left: 426px;  
 }
 
 .nian1 img{
@@ -51,8 +96,52 @@
     position: absolute;
     top: 250px;
     left: 740px;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    background-color: #eed3fa;
+}
+
+.nian1 h4{
+    position: absolute;
+    top: 228px;
+    left: 800px;
+}
+
+.yue1 input{
+    position: absolute;
+    top: 250px;
+    left: 820px;
+    background-color: #eed3fa;
+}
+
+.yue1 h4{
+    position: absolute;
+    top: 228px;
+    left: 880px;
+}
+
+.ri1 input{
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    background-color: #eed3fa;
+}
+
+.ri1 h4{
+    position: absolute;
+    top: 228px;
+    left: 960px;
+}
+
+.shi1 input{
+    position: absolute;
+    top: 250px;
+    left: 980px;
+    background-color: #eed3fa;
+}
+
+.shi1 h4{
+    position: absolute;
+    top: 228px;
+    left: 1040px;
 }
 
 .one img{
@@ -72,8 +161,8 @@
     position: absolute;
     top: 48%;
     left: 8%;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    border:1px solid #e3e197;
+    background:#ffffdd
   
 }
 
@@ -93,8 +182,8 @@
     position: absolute;
     top: 71%;
     left: 8%;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    border:1px solid #e3e197;
+    background:#ffffdd
 }
 
 .img2{
@@ -121,16 +210,16 @@
     position: absolute;
     right: 0px;
     bottom: 713px;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    border:1px solid #bfd1eb;
+    background:#f3faff
 }
 
 .textarea{
     position: absolute;
     top: 48%;
     right: 24.5%;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    border:1px solid #9bdf70;
+    background:#f0fbeb
 }
 
 .img1{
@@ -150,28 +239,12 @@
     position: absolute;
     top: 71%;
     right: 24.5%;
-    border: 1px solid rgb(47, 196, 255);
-    background-color: rgb(255, 255, 255);
+    border:1px solid #9bdf70;
+    background:#f0fbeb
 } 
 
 .return img{
     position: absolute;
     top:10px;
     right: 0;
-}
-
-.sign{
-    position: absolute;
-    left: 40%;
-    bottom: 10px;
-    letter-spacing: 2px;
-    width:80px;
-    background: none;
-    border: 1px solid #ffffff;
-    padding: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 12px;
-    font-weight: bold;
-    color: #dce5ee;
 }
