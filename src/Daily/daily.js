@@ -21,10 +21,33 @@ export default class DailyPage extends React.Component{
         }
     
         //fetch
-        fetch("/addDaliySchedule",{
-            method:"post",
-            headers:{
-                "Content-Type":"application/json"
+        fetch("/sc/addDaliySchedule", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+
+            .then(result => {
+                if (result.state == 2) {
+                    console.log("添加成功")
+                    alert("        添加成功")
+                } else if (result == 1) {
+                    console.log("内容不能空")
+                    alert("内容不能为空")
+                }
+            })
+    }
+    //查
+    modify = () => {
+        var data = {
+            "arrange": this.state.arrange,
+        }
+        fetch("/getDaliySchedule", {
+            method: "get",
+            headers: {
+                "Content-Type": "application/json"
             },
             body:JSON.stringify(data)
         }).then(response=>response.json())
@@ -63,17 +86,9 @@ export default class DailyPage extends React.Component{
                 <img src={require('./../Img/ddddd.png')} className={DailyCss.ww} />
                 <textarea cols="30" rows="5" name="arrange" placeholder="写下你的安排吧！" value={this.state.arrange} onChange={e=>this.changeValue(e)}></textarea>
                 </div>
-               
-             </div>
-             <div className={DailyCss.dailynight}>
-                 <div className={DailyCss.image1}>
-                <img src={require('./../Img/ssss.png')}/>   
-                <h3>evening</h3>
-                </div>
-                <div className={DailyCss.image2}>
-                <img src={require('./../Img/gggg.png')} className={DailyCss.rr} />
-                <textarea cols="30" rows="5" name="arrange" placeholder="写下你的安排吧！" value={this.state.arrange} onChange={e=>this.changeValue(e)}>
-                </textarea>
+                <div className={DailyCss.bu}>
+
+                    <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
                 </div>
              </div>
              <div className={DailyCss.bu}>
