@@ -27,39 +27,34 @@ export default class LoginPage extends React.Component{
             [e.target.name]:e.target.value
         })
     }
-    login = (e)=>{
+    login = ()=>{
            console.log(this.state.username)
            console.log(this.state.password)
 
         var xhr = new XMLHttpRequest()
         var data ={
-            "usename":this.state.username,
+            "username":this.state.username,
             "password":this.state.password
         }
         xhr.open("get","/user/login")
         xhr.onreadystatechange=function(params){
             if(xhr.readyState==4){
                if(xhr.status==200){
-                   message.info(xhr.respondeText)
                    console.log(xhr.respondeText)
                    var result = JSON.parse(xhr.respondeText)
                    if(result.state==3){
-                       message.info("用户名或密码不能为空")
+
                        alert("用户名或密码不能为空")
                    }else if(result.state==2){
-                    message.info("用户名或密码错误")
                     alert("用户名或密码错误")
                    }else if(result.state==1){
-                       message.info("成功")
-                       alert("登录成功")
-                    //    this.props.history.push("/homepage")
+                       alert("成功")
                    }
                }else{
                    message.info(xhr.status)
                }
             }
         }
-
         xhr.setRequestHeader('content-type','application/json');
         xhr.send(JSON.stringify(data))
 
@@ -85,10 +80,10 @@ export default class LoginPage extends React.Component{
                 <div className={LoginCss.loginbox}>
                     <h1>Login</h1>
                     <div className={LoginCss.textbox}>
-                        <input type="text"  name="username" id="username" placeholder="Username" value={this.state.username} onChange={this.changeValue}/>
+                        <input type="text"  name="username" id="username" placeholder="Username" value={this.state.username} onChange={e=>this.changeValue(e)}/>
                     </div>
                     <div className={LoginCss.textbox}>
-                        <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={this.changeValue}/>
+                        <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={e=>this.changeValue(e)}/>
                     </div>
                     {/* <Button onClick={()=>{window.location.href="homepage"} }className="r-button" >
                         <button onClick={this.login}>Sign in</button> 
