@@ -1,8 +1,45 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import {Button,Upload,Input} from 'antd';
+import axios from 'axios';
 var LogoCss = require("./logo.css")
 export default class LogoPage extends React.Component {
+
+    state = {
+         fileList: [],
+    };
+    handleUpload = () => {
+         const {fileList} = this.state;
+         const formData = new FormData();
+         fileList.forEach((file) =>{
+              formData.append('files[]',file);
+         });
+         axios.post(
+              'xxx',
+              formData,
+              {header:{'Content-Type':'multipart/form-data'}},
+         );
+    };
+
      render() {
+          const props = {
+               onRemove: (file)=>{
+                    const {fileList}=this.state;
+                    const index = fileList.indexOf(file);
+                    const newFileList = fileList.slice();
+                    newFileList.splice(index,1);
+                    this.setState({
+                         fileList:newFileList,
+                    });
+               },
+               beforeUpload:(file) =>{
+                    this.setState(state =>({
+                         fileList:[...state.fileList,file],
+                    }));
+                    return false;
+               },
+          };
+
           return (
                <div className={LogoCss.xiangce}>
                     <div className={LogoCss.header} >
@@ -11,6 +48,15 @@ export default class LogoPage extends React.Component {
                          <Link to="/homepage" className={LogoCss.return}  >
                               <img src={require("./../Img/13.png")} />
                          </Link>
+                    </div>
+                    <div>
+                         <div style={{marginTop:'5px',marginLeft:'13px'}}>
+                              <Upload {...props} fileList={this.state.fileList}>
+                                   <Button className={LogoCss.chioce}>选择本地图片</Button>
+                              </Upload>
+                         </div>
+                         <Button style={{marginTop:'5px',marginLeft:'13px'}}
+                              onClick={this.handleUpload} className={LogoCss.enter}>确定</Button>
                     </div>
                     <div className={LogoCss.image1} >
                          <a type="" href="/"><h3>个性</h3></a>
