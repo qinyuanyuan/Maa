@@ -18,6 +18,7 @@ upload = () => {
     var xhr = new XMLHttpRequest()
     var data={
         "arrange":this.state.arrange,
+        "arrange1":this.state.arrange1,
     }
     xhr.open("post","/sc/addDaliySchedule")
     xhr.onreadystatechange = function (){
@@ -53,7 +54,7 @@ upload = () => {
                 </div>
                 <div className={DailyCss.img7}>
                 <img src={require('./../Img/ddddd.png')} className={DailyCss.ww} />
-                <textarea cols="30" rows="5" name="arrange" placeholder="写下你的安排吧！" value={this.state.arrange} onChange={e=>this.changeValue(e)}></textarea>
+                <textarea cols="30" rows="5" name="arrange1" placeholder="写下你的安排吧！" value={this.state.arrange1} onChange={e=>this.changeValue(e)}></textarea>
                 </div>
                 <div className={DailyCss.bu}>
 
