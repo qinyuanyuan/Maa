@@ -24,7 +24,7 @@ export default class MainPage extends React.Component {
       "text3":this.state.text3,
       "text4":this.state.text4,
     }
-    xhr.open("post", "/addTtripSchedule")
+    xhr.open("post", "/in/addTtripItinerary")
     xhr.onreadystatechange = function () {
       if(xhr.readyState==4){
         if(xhr.status==200){
@@ -50,7 +50,7 @@ export default class MainPage extends React.Component {
         <div className={MainCss.return} >
           <Link to="/homepage" >
             <img src={require('./../Img/go3.png')} height="60px" width="60px" className="" alt="" />
-          </Link>
+          </Link> 
         </div>
         <div className={MainCss.nian}>
           <input type="text" size="20" name="beforetime" value={this.state.beforetime} onChange={e => this.changeValue(e)} placeholder='请输入时间,例如2000-01-01' />

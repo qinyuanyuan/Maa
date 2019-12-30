@@ -42,7 +42,7 @@ export default class HomePage extends React.Component{
        xhr.setRequestHeader('content-type','application/json');
        xhr.send(JSON.stringify(data))
     }
-
+    
     render(){
 
         return(
