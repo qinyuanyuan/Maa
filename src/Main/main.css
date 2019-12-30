@@ -61,12 +61,12 @@
     top: 275px;
 }
 
-.one h4{
+/* .one h4{
     position: absolute;
     left: 8%;
     top: 42%;
     font-size: 20px;
-}
+} */
 
 .one textarea{
     position: absolute;
@@ -82,20 +82,20 @@
     left: 90px;
     top: 80px;
 }
-.two h4{
+/* .two h4{
     position: absolute;
     left: 8%;
     top: 65%;
     font-size: 20px;
-}
+} */
 
-.two textarea{
+/* .two textarea{
     position: absolute;
     top: 71%;
     left: 8%;
     border: 1px solid rgb(47, 196, 255);
     background-color: rgb(255, 255, 255);
-}
+} */
 
 .img2{
     position: absolute;
@@ -109,13 +109,13 @@
     top: 275px;
 }
 
-.footer h5{
+/* .footer h5{
     position: absolute;
     right: 50%;
     top: 42%;
     font-size: 20px;  
     color:  rgb(168, 172, 112);
-}
+} */
 
 .text{
     position: absolute;
@@ -133,18 +133,18 @@
     background-color: rgb(255, 255, 255);
 }
 
-.img1{
+/* .img1{
     position: absolute;
     right: 600px;
     top:64%;
-}
+} */
 
-.footer h4{
+/* .footer h4{
     position: absolute;
     right: 50%;
     top: 65%;
     font-size: 20px;  
-}
+} */
 
 .footer textarea{
     position: absolute;
@@ -163,7 +163,7 @@
 .sign{
     position: absolute;
     left: 40%;
-    bottom: 10px;
+    bottom: 10%;
     letter-spacing: 2px;
     width:80px;
     background: none;

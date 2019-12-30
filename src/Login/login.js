@@ -1,4 +1,3 @@
-
 import React from 'react';
 import i001 from './../Img/bg001.png';
 import {Link} from 'react-router-dom';
