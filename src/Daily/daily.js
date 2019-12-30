@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import { Calendar, Badge, Button, Message } from 'antd';
 
@@ -53,32 +53,6 @@ export default class DailyPage extends React.Component {
             body: JSON.stringify(data)
         }).then(response => response.json())
     }
-    //改
-   commit = () => {
-        var data = {
-            "arrange": this.state.arrange,
-        }
-    fetch("/putDaliySchedule", {
-        method: "put",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    }).then(response => response.json())
-
-        .then(result => {
-            if (result.state == 2) {
-                console.log("修改成功")
-                alert("修改成功")
-            } else if (result == 1) {
-                console.log("内容不能空")
-                alert("内容不能为空")
-            }
-
-        })
-
-    }
-
 
     render() {
         return (

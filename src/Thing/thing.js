@@ -1,11 +1,50 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import { Drawer, Button ,Input} from 'antd';
+import { Drawer, Button, Input } from 'antd';
 import TieZhipage from './tiezhi';
 
 var ThingCss = require('./thing.css');
 const { TextArea } = Input;
 export default class ThingPage extends React.Component {
+  //fetch请求后台数据
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+  changeValue = (e) => {
+    this.setstate = ({
+      [e.target.name]: e.target.value
+    })
+  }
+  //增
+  upload = () => {
+
+    var data = {
+      "thing": this.state.thing,
+    }
+
+
+    fetch("/article/write", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(response => response.json())
+
+      .then(result => {
+        if (result.state == 1) {
+          console.log("添加成功")
+          alert("        添加成功")
+        } else if (result == 2) {
+          console.log("内容不能空")
+          alert("内容不能为空")
+        }
+      })
+  }
+
+
+
   state = { visible: false };
 
   showDrawer = () => {
@@ -72,20 +111,22 @@ export default class ThingPage extends React.Component {
           </div>
           <div className={ThingCss.thingauto}>
 
-          <TextArea className={ThingCss.text1} rows={17} />
-             <Button shape="oval" type="radius" className={ThingCss.Button}>ok</Button>
-              <div className={ThingCss.thingauto1}>
-                <img src={require("./../Img/fenxiang.jpg")} />
-                <h3>分享</h3>
-              </div>
-              <div className={ThingCss.thingauto2}>
-                <img src={require("./../Img/gongkai.jpg")} />
-                <h3>公开</h3>
-              </div>
-              <div className={ThingCss.thingauto3}>
-                <img src={require("./../Img/gongkai.jpg")} />
-                <h3>不公开</h3>
-              </div>
+            <TextArea className={ThingCss.text1} rows={17} >
+              <input type="text" name="thing" value={this.state.arrange} onChange={e => this.changeValue(e)}></input>
+              </TextArea>
+            {/* <Button  type="radius" className={ThingCss.Button}>ok</Button> */}
+            <div className={ThingCss.thingauto1}>
+              <a href="/" type=""> <img src={require("./../Img/fenxiang.jpg")} /></a>
+              <button onClick={this.upload}>分享</button>
+            </div>
+            <div className={ThingCss.thingauto2}>
+              <a href="/" type=""> <img src={require("./../Img/gongkai.jpg")} /></a>
+              <button onClick={this.upload}>公开</button>
+            </div>
+            <div className={ThingCss.thingauto3}>
+              <a href="/" type=""><img src={require("./../Img/gongkai.jpg")} /></a>
+              <button onClick={this.upload}>不公开</button>
+            </div>
 
           </div>
 
