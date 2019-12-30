@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom'
-import { Calendar , Badge, Button,Message} from 'antd';
+import React from 'react';
+import { Link } from 'react-router-dom'
+import { Calendar, Badge, Button, Message } from 'antd';
 
 var DailyCss = require('./daily.css');
 export default class DailyPage extends React.Component{
@@ -49,20 +49,10 @@ export default class DailyPage extends React.Component{
             headers: {
                 "Content-Type": "application/json"
             },
-            body:JSON.stringify(data)
-        }).then(response=>response.json())
-        .then(result=>{
-            if(result.state==2){
-                console.log("添加成功")
-                alert("添加成功")
-            }else if(result==1){
-                console.log("内容不能空")
-                alert("内容不能为空")
-            }
-
-        })
-        
+            body: JSON.stringify(data)
+        }).then(response => response.json())
     }
+
     render() {
         return(
             <div className={DailyCss.daily} >

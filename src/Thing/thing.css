@@ -86,19 +86,19 @@
     top: 400px;
 }
 
-.thingauto1 h3{
+.thingauto1 button{
     position: absolute;
     left: 54%;
     bottom: 10%;
 }
 
-.thingauto2 h3{
+.thingauto2 button{
     position: absolute;
     left: 65.5%;
     bottom: 10%;
 }
 
-.thingauto3 h3{
+.thingauto3 button{
     position: absolute;
     left: 76.5%;
     bottom: 10%;
