@@ -4,55 +4,35 @@ import { Calendar, Badge, Button, Message } from 'antd';
 
 var DailyCss = require('./daily.css');
 export default class DailyPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={}
+  //xhr
+  constructor(props){
+      super(props)
+      this.state = {}
+  }
+changeValue = (e) =>{
+    this.setState({
+        [e.target.name]: e.target.value
+    })
+}
+upload = () => {
+    var xhr = new XMLHttpRequest()
+    var data={
+        "arrange":this.state.arrange,
+        "arrange1":this.state.arrange1,
     }
-    changeValue=(e)=>{
-        this.setstate=({
-                [e.target.name]:e.target.value
-        })
-    }
-    upload = ()=>{
-        //XHR
-        // var xhr = new XMLHTTPRequest()
-        var data={
-            "arrange":this.state.arrange,
+    xhr.open("post","/sc/addDaliySchedule")
+    xhr.onreadystatechange = function (){
+        if(xhr.readyState==4){
+            if(xhr.status==200){
+                var result = JSON.parse(xhr.responseText)
+                if(result.state==2)
+                alert("不能为空")
+            }else if(result.state==1){
+                alert("成功")
+            }
         }
-    
-        //fetch
-        fetch("/sc/addDaliySchedule", {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        }).then(response => response.json())
-
-            .then(result => {
-                if (result.state == 2) {
-                    console.log("添加成功")
-                    alert("        添加成功")
-                } else if (result == 1) {
-                    console.log("内容不能空")
-                    alert("内容不能为空")
-                }
-            })
     }
-    //查
-    modify = () => {
-        var data = {
-            "arrange": this.state.arrange,
-        }
-        fetch("/getDaliySchedule", {
-            method: "get",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        }).then(response => response.json())
-    }
-
+}
     render() {
         return(
             <div className={DailyCss.daily} >
@@ -74,13 +54,14 @@ export default class DailyPage extends React.Component{
                 </div>
                 <div className={DailyCss.img7}>
                 <img src={require('./../Img/ddddd.png')} className={DailyCss.ww} />
-                <textarea cols="30" rows="5" name="arrange" placeholder="写下你的安排吧！" value={this.state.arrange} onChange={e=>this.changeValue(e)}></textarea>
+                <textarea cols="30" rows="5" name="arrange1" placeholder="写下你的安排吧！" value={this.state.arrange1} onChange={e=>this.changeValue(e)}></textarea>
                 </div>
                 <div className={DailyCss.bu}>
 
-                    <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
+                    <Button  type="radius" icon="" onClick={this.upload}>ok</Button>
                 </div>
              </div>
+            
              <div className={DailyCss.bo}>
                <Button style={{backgroundColor:'#F0F2F5'}} 
                       onClick={()=>{window.location.href="homepage"}}

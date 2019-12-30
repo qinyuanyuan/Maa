@@ -6,44 +6,34 @@ import TieZhipage from './tiezhi';
 var ThingCss = require('./thing.css');
 const { TextArea } = Input;
 export default class ThingPage extends React.Component {
-  //fetch请求后台数据
-  constructor(props) {
-    super(props);
+
+  constructor(props){
+    super(props)
     this.state = {}
-  }
-  changeValue = (e) => {
-    this.setstate = ({
+}
+changeValue = (e) =>{
+  this.setState({
       [e.target.name]: e.target.value
-    })
+  })
+}
+upload = () => {
+  var xhr = new XMLHttpRequest()
+  var data={
+      "thing":this.state.thing,
   }
-  //增
-  upload = () => {
-
-    var data = {
-      "thing": this.state.thing,
-    }
-
-
-    fetch("/article/write", {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    }).then(response => response.json())
-
-      .then(result => {
-        if (result.state == 1) {
-          console.log("添加成功")
-          alert("        添加成功")
-        } else if (result == 2) {
-          console.log("内容不能空")
-          alert("内容不能为空")
-        }
-      })
+  xhr.open("post","/article/write")
+  xhr.onreadystatechange = function (){
+      if(xhr.readyState==4){
+          if(xhr.status==200){
+              var result = JSON.parse(xhr.responseText)
+              if(result.state==2)
+              alert("不能为空")
+          }else if(result.state==1){
+              alert("成功")
+          }
+      }
   }
-
-
+}
 
   state = { visible: false };
 
@@ -112,9 +102,8 @@ export default class ThingPage extends React.Component {
           <div className={ThingCss.thingauto}>
 
             <TextArea className={ThingCss.text1} rows={17} >
-              <input type="text" name="thing" value={this.state.arrange} onChange={e => this.changeValue(e)}></input>
+              <input name="thing" value={this.state.arrange} onChange={e => this.changeValue(e)}></input>
               </TextArea>
-            {/* <Button  type="radius" className={ThingCss.Button}>ok</Button> */}
             <div className={ThingCss.thingauto1}>
               <a href="/" type=""> <img src={require("./../Img/fenxiang.jpg")} /></a>
               <button onClick={this.upload}>分享</button>
