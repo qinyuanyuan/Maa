@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
 import { Calendar , Badge, Button,Message} from 'antd';
 
@@ -64,7 +64,7 @@ export default class DailyPage extends React.Component{
         
     }
     render() {
-        return(
+        return(                               
             <div className={DailyCss.daily} >
              <div className={DailyCss.dailymorning}>  
                 <div className={DailyCss.img1}>
@@ -88,12 +88,12 @@ export default class DailyPage extends React.Component{
                 </div>
                 <div className={DailyCss.bu}>
 
-                    <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
+                    <Button type="radius" onClick={this.upload}>ok</Button>
                 </div>
              </div>
              <div className={DailyCss.bu}>
                
-             <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
+             <Button type="radius" onClick={this.upload}>ok</Button>
              </div>
              <div className={DailyCss.bo}>
                <Button style={{backgroundColor:'#F0F2F5'}} 
