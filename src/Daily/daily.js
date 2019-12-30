@@ -91,10 +91,6 @@ export default class DailyPage extends React.Component{
                     <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
                 </div>
              </div>
-             <div className={DailyCss.bu}>
-               
-             <Button shape="oval" type="radius" icon="" onClick={this.upload}>ok</Button>
-             </div>
              <div className={DailyCss.bo}>
                <Button style={{backgroundColor:'#F0F2F5'}} 
                       onClick={()=>{window.location.href="homepage"}}
