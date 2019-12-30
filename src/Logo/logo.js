@@ -4,41 +4,35 @@ import { Button, Upload, Input } from 'antd';
 import axios from 'axios';
 var LogoCss = require("./logo.css")
 export default class LogoPage extends React.Component {
-     state = {
-          fileList: [],
-     };
+     constructor(props) {
+          super(props)
+          this.state = {}
+     }
+     changeValue = (e) => {
+          this.setState({
+               [e.target.name]: e.target.value
+          })
+     }
      handleUpload = () => {
-          const { fileList } = this.state;
-          const formData = new FormData();
-          fileList.forEach((file) => {
-               formData.append('files[]', file);
-          });
-          axios.post(
-               '/avatar',
-               formData,
-               { header: { 'Content-Type': 'multipart/form-data' } },
-          );
-     };
-
+          var xhr = new XMLHttpRequest()
+          var data = {
+               "header":this.state.header
+          }
+          xhr.open("post", "/avatar/file")
+          xhr.onreadystatechange = function () {
+               if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                         var result = JSON.parse(xhr.responseText)
+                         if (result.state == 2) {
+                              alert("头像上传成功！")
+                         }
+                    }
+               }
+          }
+          xhr.setRequestHeader('content-type', 'application/json');
+          xhr.send(JSON.stringify(data))
+     }
      render() {
-          const props = {
-               onRemove: (file) => {
-                    const { fileList } = this.state;
-                    const index = fileList.indexOf(file);
-                    const newFileList = fileList.slice();
-                    newFileList.splice(index, 1);
-                    this.setState({
-                         fileList: newFileList,
-                    });
-               },
-               beforeUpload: (file) => {
-                    this.setState(state => ({
-                         fileList: [...state.fileList, file],
-                    }));
-                    return false;
-               },
-          };
-
           return (
                <div className={LogoCss.xiangce}>
                     <div className={LogoCss.header} >
@@ -49,9 +43,10 @@ export default class LogoPage extends React.Component {
                          </Link>
                     </div>
                     <div>
-                         <div style={{ marginTop: '5px', marginLeft: '13px' }}>
-                              <Upload {...props} fileList={this.state.fileList}>
-                                   <Button className={LogoCss.chioce}>选择本地图片</Button>
+                         <div>
+                              <Upload>
+                                   {/* <Button className={LogoCss.chioce} name="header" value={this.state.header} onChange={e => this.changeValue(e)}>选择本地图片</Button> */}
+                                   <p className={LogoCss.choice} name="header" value={this.state.header} onChange={e => this.changeValue(e)}>选择本地图片</p>
                               </Upload>
                          </div>
                          <Button style={{ marginTop: '5px', marginLeft: '13px' }}

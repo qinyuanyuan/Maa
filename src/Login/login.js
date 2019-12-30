@@ -35,7 +35,7 @@ export default class LoginPage extends React.Component{
             "username":this.state.username,
             "password":this.state.password
         }
-        xhr.open("get","/user/login")
+        xhr.open("get","/user/login","true")
         xhr.onreadystatechange=function(params){
             if(xhr.readyState==4){
                if(xhr.status==200){
