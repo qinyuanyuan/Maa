@@ -9,7 +9,6 @@ import LoginPage from './Login/login';
 import DecoratePage from './Decorate/decorate';
 import BasePage from './Base/base';
 import VipPage from './Vip/vip';
-import EstablishPage from './Establish/establish';
 import EnrolPage from './Enrol/enrol';
 import MainPage from './Main/main';
 import DailyPage from './Daily/daily';
@@ -32,7 +31,6 @@ class IndexPage extends React.Component{
                     <Route path="/decorate" component={DecoratePage}></Route>
                     <Route path="/base" component={BasePage}></Route>
                     <Route path="/VIP" component={VipPage}></Route>
-                    <Route path="/establish" component={EstablishPage}></Route>
                     <Route path="/enrol"  component={EnrolPage}></Route>
                     <Route path="/main" component={MainPage}></Route>
                     <Route path="/daily" component={DailyPage}></Route>

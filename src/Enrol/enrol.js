@@ -80,7 +80,7 @@ export default class EnrolPage extends React.Component {
                      <lable for="male">男</lable>
                   </form>
 
-                  <Button shape="oval" icon="" onClick={this.upload}>注册
+                  <Button  onClick={this.upload}>注册
                  </Button>
                </div>
                <Link to="login" className={EnrolCss.return}>

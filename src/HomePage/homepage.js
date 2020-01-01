@@ -26,6 +26,7 @@ export default class HomePage extends React.Component{
        }
        //open连接
        xhr.open("post","/sign/write")
+       xhr.open("post","/nnames/writing")
        //配置响应函数
        xhr.onreadystatechange=function(){
           if(xhr.readyState==4){
@@ -47,7 +48,7 @@ export default class HomePage extends React.Component{
 
         return(
           
-            <div className={HomePageCss.homepage}onClick={this.upload}>
+            <div className={HomePageCss.homepage}>
                 <HeaderPage/>
                 <div className={HomePageCss.lefttop}>
                     <div className={HomePageCss.touxiang}>
@@ -55,9 +56,13 @@ export default class HomePage extends React.Component{
                             <Avatar shape="square" size={64} icon="user" />
                             {/* <a href="/logo" >+</a> */}
                         </Link>
+                        <div onClick={this.upload}>
                         <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
+                        </div>
                     </div>
+                    <div onClick={this.upload}>
                     <input type="text" ref={input=>this.input=input}  placeholder='留下你的签名......'name="content" value={this.state.content} onChange={e=>this.changeValue(e)} />   
+                    </div>
                 </div>
                 <div className={HomePageCss.leftdown}>
                     <text>
