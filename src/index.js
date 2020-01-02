@@ -31,9 +31,10 @@ class IndexPage extends React.Component{
                     <Route path="/decorate" component={DecoratePage}></Route>
                     <Route path="/base" component={BasePage}></Route>
                     <Route path="/VIP" component={VipPage}></Route>
+                    {/* <Route path="/establish" component={EstablishPage}></Route> */}
                     <Route path="/enrol"  component={EnrolPage}></Route>
                     <Route path="/main" component={MainPage}></Route>
-                    <Route path="/daily" component={DailyPage}></Route>
+                    <Route path="/daily" component={() =>(<DailyPage />)}></Route>
                     <Route path="/custom" component={CustomPage}></Route>
                     <Route path="/view" component={ViewPage}></Route>
                     <Route path="/thing" component={ThingPage}></Route>

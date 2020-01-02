@@ -20,9 +20,7 @@ export default class MainPage extends React.Component {
       "beforetime":this.state.beforetime,
       "aftertime":this.state.aftertime,
       "text1":this.state.text1,
-      "text2":this.state.text2,
       "text3":this.state.text3,
-      "text4":this.state.text4,
     }
     xhr.open("post", "/in/addTtripItinerary")
     xhr.onreadystatechange = function () {
@@ -61,26 +59,19 @@ export default class MainPage extends React.Component {
         </div>
         <div className={MainCss.one}>
           <img src={require('./../Img/s.png')} className="" alt="" />
-          <h4>one</h4>
           <textarea cols="50" rows="5" name="text1" value={this.state.text1} onChange={e => this.changeValue(e)} ></textarea>
         </div>
         <div className={MainCss.two}>
           <img src={require('./../Img/t.png')} className="" alt="" />
-          <h4>two</h4>
-          <textarea cols="50" rows="5" name="text2" value={this.state.text2} onChange={e => this.changeValue(e)}></textarea>
         </div>
         <div className={MainCss.footer}>
           <img src={require('./../Img/go2.png')} className={MainCss.img2} alt="" />
-          <h5>one</h5>
           <div className={MainCss.three}>
             <img src={require('./../Img/u.png')} className="" alt="" />
           </div>
           <div className={MainCss.textarea}>
             <textarea cols="50" rows="5" name="text3" value={this.state.text3} onChange={e => this.changeValue(e)}></textarea>
           </div>
-          <img className={MainCss.img1} src={require('./../Img/i.png')} alt="" />
-          <h4>two</h4>
-          <textarea cols="50" rows="5" name="text4" value={this.state.text4} onChange={e => this.changeValue(e)}></textarea>
         </div>
         <button onClick={this.commit} className={MainCss.sign}>提交</button>
       </div>

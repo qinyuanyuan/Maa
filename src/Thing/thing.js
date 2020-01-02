@@ -6,6 +6,37 @@ import TieZhipage from './tiezhi';
 var ThingCss = require('./thing.css');
 const { TextArea } = Input;
 export default class ThingPage extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = {}
+}
+changeValue = (e) =>{
+  this.setState({
+      [e.target.name]: e.target.value
+  })
+}
+upload = () => {
+  var xhr = new XMLHttpRequest()
+  var data={
+      "thing":this.state.thing,
+  }
+  xhr.open("post","/article/write")
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState==4){
+      if(xhr.status==200){
+        var result = JSON.parse(xhr.responseText)
+        if(result.state==2){
+          alert("内容不能为空")
+        }else if(result.state==1){
+          alert("提交成功")
+        }
+      }
+    }
+  }
+  xhr.setRequestHeader('content-type','application/json');
+  xhr.send(JSON.stringify(data))
+}
   state = { visible: false };
 
   showDrawer = () => {
@@ -71,21 +102,16 @@ export default class ThingPage extends React.Component {
             </Link>
           </div>
           <div className={ThingCss.thingauto}>
-
-          <TextArea className={ThingCss.text1} rows={17} />
-             <Button shape="oval" type="radius" className={ThingCss.Button}>ok</Button>
-              <div className={ThingCss.thingauto1}>
-                <img src={require("./../Img/fenxiang.jpg")} />
-                <h3>分享</h3>
-              </div>
-              <div className={ThingCss.thingauto2}>
-                <img src={require("./../Img/gongkai.jpg")} />
-                <h3>公开</h3>
-              </div>
-              <div className={ThingCss.thingauto3}>
-                <img src={require("./../Img/gongkai.jpg")} />
-                <h3>不公开</h3>
-              </div>
+              <textarea  className={ThingCss.text1} cols="80" rows="18" name="thing" value={this.state.arrange} onChange={e => this.changeValue(e)}></textarea>
+            <div className={ThingCss.thingauto1}>
+              <button onClick={this.upload}>分享</button>
+            </div>
+            <div className={ThingCss.thingauto2}>
+              <button onClick={this.upload}>公开</button>
+            </div>
+            <div className={ThingCss.thingauto3}>
+              <button onClick={this.upload}>不公开</button>
+            </div>
 
           </div>
 

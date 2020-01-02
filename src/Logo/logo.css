@@ -15,11 +15,29 @@
 }
 
 .choice{
-
+    position: absolute;
+    top:10%;
+    left: 53%;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .enter{
-    
+    position: absolute;
+    top:13%;
+    left: 53%;
+    letter-spacing: 2px;
+    width:80px;
+    background: none;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 12px;
+    font-weight: bold;
+    color: #88c3ff;
 }
 
 .image1 h3{

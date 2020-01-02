@@ -1,4 +1,3 @@
-
 import React from 'react';
 import i001 from './../Img/bg001.png';
 import {Link} from 'react-router-dom';
@@ -36,7 +35,7 @@ export default class LoginPage extends React.Component{
             "username":this.state.username,
             "password":this.state.password
         }
-        xhr.open("get","/user/login")
+        xhr.open("get","/users/login","true")
         xhr.onreadystatechange=function(params){
             if(xhr.readyState==4){
                if(xhr.status==200){
