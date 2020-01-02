@@ -46,7 +46,7 @@ export default class HomePage extends React.Component{
         //XHR
         var xhr = new XMLHttpRequest() 
         var data={
-           "text":this.state.text,
+           "text":this.state.content,
         }
         //open连接
         xhr.open("post","/nnames/writing")
@@ -80,7 +80,7 @@ export default class HomePage extends React.Component{
                             {/* <a href="/logo" >+</a> */}
                         </Link>
                         <div onClick={this.up}>
-                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'name="text" value={this.state.text} onChange={e=>this.changeValue(e)}/> 
+                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'name="text" value={this.state.content} onChange={e=>this.changeValue(e)}/> 
                         </div>
                     </div>
                     <div onClick={this.upload}>
