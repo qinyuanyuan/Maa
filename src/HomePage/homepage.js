@@ -26,7 +26,6 @@ export default class HomePage extends React.Component{
        }
        //open连接
        xhr.open("post","/sign/write")
-       xhr.open("post","/nnames/writing")
        //配置响应函数
        xhr.onreadystatechange=function(){
           if(xhr.readyState==4){
@@ -43,6 +42,30 @@ export default class HomePage extends React.Component{
        xhr.setRequestHeader('content-type','application/json');
        xhr.send(JSON.stringify(data))
     }
+    up = ()=>{
+        //XHR
+        var xhr = new XMLHttpRequest() 
+        var data={
+           "text":this.state.text,
+        }
+        //open连接
+        xhr.open("post","/nnames/writing")
+        //配置响应函数
+        xhr.onreadystatechange=function(){
+           if(xhr.readyState==4){
+              if(xhr.status==200){
+                console.log(xhr.responseText)
+                var result = JSON.parse(xhr.responseText)
+                if(result.state==1){
+                   alert("设置昵称成功！")
+                }
+              }
+           }
+        }
+        //发送数据
+        xhr.setRequestHeader('content-type','application/json');
+        xhr.send(JSON.stringify(data))
+     }
     
     render(){
 
@@ -56,8 +79,8 @@ export default class HomePage extends React.Component{
                             <Avatar shape="square" size={64} icon="user" />
                             {/* <a href="/logo" >+</a> */}
                         </Link>
-                        <div onClick={this.upload}>
-                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'/> 
+                        <div onClick={this.up}>
+                        <input type="text" ref={input=>this.input=input} maxlength="10" placeholder='昵称'name="text" value={this.state.text} onChange={e=>this.changeValue(e)}/> 
                         </div>
                     </div>
                     <div onClick={this.upload}>
